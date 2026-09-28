@@ -2,7 +2,7 @@
   "feature": "culture",
   "radiusMeters": 500,
   "crs": "EPSG:6677",
-  "generatedAt": "2026-09-28T02:05:45Z",
+  "generatedAt": "2026-09-28T10:04:02Z",
   "municipalitySampling": "center + 8 @ r/2 + 16 @ r (GSI reverse geocoder)",
   "unlocatedTolerance": 0.05,
   "stations": [
@@ -752,14 +752,14 @@
     },
     {
       "stationId": "sugamo",
-      "status": "complete",
-      "count": 4,
+      "status": "incomplete",
+      "count": null,
       "lowerBound": 4,
       "municipalities": [
         {
           "code": "13105",
           "name": "文京区",
-          "coverage": "covered",
+          "coverage": "uncovered",
           "unlocated": 0
         },
         {
@@ -804,7 +804,6 @@
         }
       ],
       "datasets": [
-        "t131059d0304010001",
         "t131164d0000000007"
       ]
     },
@@ -817,7 +816,7 @@
         {
           "code": "13105",
           "name": "文京区",
-          "coverage": "covered",
+          "coverage": "uncovered",
           "unlocated": 0
         },
         {
@@ -868,7 +867,6 @@
         }
       ],
       "datasets": [
-        "t131059d0304010001",
         "t131164d0000000007"
       ]
     },
@@ -905,7 +903,7 @@
         {
           "code": "13105",
           "name": "文京区",
-          "coverage": "covered",
+          "coverage": "uncovered",
           "unlocated": 0
         },
         {
@@ -1027,7 +1025,6 @@
       ],
       "datasets": [
         "t000021d0000000017",
-        "t131059d0304010001",
         "t131067d0000000393",
         "t131181d0000000010"
       ]
@@ -1286,8 +1283,8 @@
     },
     {
       "stationId": "okachimachi",
-      "status": "complete",
-      "count": 2,
+      "status": "incomplete",
+      "count": null,
       "lowerBound": 2,
       "municipalities": [
         {
@@ -1299,7 +1296,7 @@
         {
           "code": "13105",
           "name": "文京区",
-          "coverage": "covered",
+          "coverage": "uncovered",
           "unlocated": 0
         },
         {
@@ -1330,14 +1327,13 @@
       "datasets": [
         "t000021d2000000005",
         "t131016d0000000002",
-        "t131059d0304010001",
         "t131067d0000000393"
       ]
     },
     {
       "stationId": "akihabara",
-      "status": "complete",
-      "count": 1,
+      "status": "incomplete",
+      "count": null,
       "lowerBound": 1,
       "municipalities": [
         {
@@ -1349,7 +1345,7 @@
         {
           "code": "13105",
           "name": "文京区",
-          "coverage": "covered",
+          "coverage": "uncovered",
           "unlocated": 0
         },
         {
@@ -1371,7 +1367,6 @@
       ],
       "datasets": [
         "t131016d0000000002",
-        "t131059d0304010001",
         "t131067d0000000393"
       ]
     },

@@ -4,12 +4,13 @@ import logging
 from datetime import datetime
 from typing import Any
 
+from ..classify import DatasetDescriptor, JevError, SemanticClassifier
 from ..http import HttpError
 from ..inspect.schema import Inspection, inspect_datastore, inspect_rows
 from ..inspect.tabular import TabularError, parse_table
 from .catalog import CkanCatalog
 from .definitions import FeatureDefinition
-from .evaluate import evaluate, pick_resource, semantic_signal
+from .evaluate import ACCEPT_MIN_LOCATION, evaluate, pick_resource, semantic_signal
 from .manifest import mark_duplicates
 
 log = logging.getLogger(__name__)
@@ -36,8 +37,57 @@ def inspect_resource(catalog: CkanCatalog, resource: dict[str, Any]) -> Inspecti
     return None
 
 
+def apply_semantic(
+    entry: dict[str, Any],
+    package: dict[str, Any],
+    classifier: SemanticClassifier,
+    min_confidence: float,
+    min_list_score: float,
+    min_location: float,
+    reject_below_list_score: float = 0.3,
+) -> None:
+    """Decide a rule-`review` entry with the classifier (spec 0009 §7.2)."""
+    descriptor = DatasetDescriptor(
+        name=package.get("title") or package["name"],
+        organization=(package.get("organization") or {}).get("title"),
+        resources=[r.get("name") or "" for r in package.get("resources", [])][:12],
+        columns=(entry.get("inspection") or {}).get("fields") or [],
+    )
+    try:
+        j = classifier.judge_dataset(descriptor)
+    except JevError as exc:
+        entry["reason"] += f"。{classifier.name} 失敗: {exc}"
+        return
+    entry["semantic"] = j.to_dict()
+    list_score = j.list_score or 0.0
+    confident = j.confidence >= min_confidence
+    location_ok = (entry["signals"].get("location") or 0.0) >= min_location
+    note = f"{j.classifier}: {j.category}（確信度 {j.confidence:.2f}、一覧 {list_score:.2f}）"
+
+    usable = j.category in (entry["feature"], "mixed")
+    if confident and usable and list_score >= min_list_score:
+        if j.category == "mixed":
+            entry["rowFilter"] = True  # count only rows classified as this feature
+        if location_ok:
+            entry["status"] = entry["autoStatus"] = "accepted"
+            entry["reason"] += f"。{note} → 採用"
+        else:
+            entry["reason"] += f"。{note}。位置情報が不足のため要確認のまま"
+    elif confident and (not usable or list_score < reject_below_list_score):
+        entry["status"] = entry["autoStatus"] = "rejected"
+        entry["reason"] += f"。{note} → 不採用"
+    else:
+        # e.g. 文化財一覧 with list 0.3-0.45 (items mixed with places): keep for a human
+        entry["reason"] += f"。{note}。判断が分かれるため要確認のまま"
+
+
 def discover_feature(
-    catalog: CkanCatalog, d: FeatureDefinition, now: datetime
+    catalog: CkanCatalog,
+    d: FeatureDefinition,
+    now: datetime,
+    classifier: SemanticClassifier | None = None,
+    min_confidence: float = 0.7,
+    min_list_score: float = 0.45,
 ) -> list[dict[str, Any]]:
     entries = []
     for p in search_candidates(catalog, d):
@@ -85,4 +135,8 @@ def discover_feature(
                 "duplicateOf": None,
             }
         )
+        if classifier is not None and entries[-1]["status"] == "review":
+            apply_semantic(
+                entries[-1], p, classifier, min_confidence, min_list_score, ACCEPT_MIN_LOCATION
+            )
     return mark_duplicates(entries)

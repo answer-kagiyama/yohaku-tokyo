@@ -2,7 +2,7 @@
   "feature": "park",
   "radiusMeters": 500,
   "crs": "EPSG:6677",
-  "generatedAt": "2026-09-28T02:05:45Z",
+  "generatedAt": "2026-09-28T10:04:02Z",
   "municipalitySampling": "center + 8 @ r/2 + 16 @ r (GSI reverse geocoder)",
   "unlocatedTolerance": 0.05,
   "stations": [
@@ -141,8 +141,8 @@
     {
       "stationId": "hamamatsucho",
       "status": "complete",
-      "count": 8,
-      "lowerBound": 8,
+      "count": 9,
+      "lowerBound": 9,
       "municipalities": [
         {
           "code": "13102",
@@ -158,6 +158,14 @@
         }
       ],
       "facilities": [
+        {
+          "id": "t000029d0000000003:92",
+          "name": "旧芝離宮恩賜庭園",
+          "distanceM": 93.9,
+          "coordSource": "source",
+          "datasetId": "t000029d0000000003",
+          "organization": "東京都デジタルサービス局"
+        },
         {
           "id": "t131032d0000000014:160",
           "name": "浜松町二丁目緑地",
@@ -224,6 +232,7 @@
         }
       ],
       "datasets": [
+        "t000029d0000000003",
         "t131024d0000000011",
         "t131024d0000000012",
         "t131024d2025000003",
@@ -1206,7 +1215,7 @@
       "stationId": "komagome",
       "status": "incomplete",
       "count": null,
-      "lowerBound": 1,
+      "lowerBound": 2,
       "municipalities": [
         {
           "code": "13105",
@@ -1235,9 +1244,18 @@
           "coordSource": "source",
           "datasetId": "t131059d0509040001",
           "organization": "文京区"
+        },
+        {
+          "id": "t000029d0000000003:99",
+          "name": "六義園",
+          "distanceM": 477.6,
+          "coordSource": "source",
+          "datasetId": "t000029d0000000003",
+          "organization": "東京都デジタルサービス局"
         }
       ],
       "datasets": [
+        "t000029d0000000003",
         "t131059d0509040001",
         "t131059d2025000003"
       ]

@@ -17,3 +17,10 @@ coverage:
   # 500m 圏（約 0.79km²）は区の面積の 1 割未満のため、5% の位置不明が圏内に入る期待値は通常 1 件未満。
   # 許容した件数は evidence に残し UI に表示する。
   unlocated_tolerance: 0.05
+
+semantic:
+  # jev = ルールで決めきれない部分だけ Jev（TypeSafe AI）に判定させる（spec 0009 §7）。
+  # TYPESAFE_API_KEY が無ければ自動でルールのみ。none でも無効化できる。
+  classifier: jev
+  dataset: { min_confidence: 0.7, min_list_score: 0.45 }
+  facility: { min_confidence: 0.5 }

@@ -30,7 +30,7 @@ export const provenanceSchema = z.object({
       reason: z.string().nullable(),
       ingest: z
         .object({
-          status: z.enum(["ok", "degraded", "failed", "out-of-scope"]),
+          status: z.enum(["ok", "degraded", "failed", "out-of-scope", "no-matching-rows"]),
           retrievedAt: z.string().nullable().optional(),
           rows: z.number().int().nullable().optional(),
           located: z.number().int(),
@@ -56,4 +56,5 @@ export const INGEST_STATUS_LABEL = {
   degraded: "位置不明が多い",
   failed: "取得失敗",
   "out-of-scope": "位置変換の対象外",
+  "no-matching-rows": "該当する施設なし",
 } as const;

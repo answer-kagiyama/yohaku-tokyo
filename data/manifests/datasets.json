@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T02:05:46Z",
+  "generatedAt": "2026-09-28T10:04:03Z",
   "catalog": "https://catalog.data.metro.tokyo.lg.jp",
   "classifier": "rule-based",
   "features": {
@@ -14,8 +14,8 @@
       ],
       "candidates": 2434,
       "accepted": 32,
-      "review": 31,
-      "rejected": 2371
+      "review": 19,
+      "rejected": 2383
     },
     "library": {
       "label": "図書館",
@@ -24,8 +24,8 @@
       ],
       "candidates": 242,
       "accepted": 75,
-      "review": 55,
-      "rejected": 112
+      "review": 24,
+      "rejected": 143
     },
     "park": {
       "label": "公園",
@@ -35,9 +35,9 @@
         "緑地"
       ],
       "candidates": 703,
-      "accepted": 47,
-      "review": 49,
-      "rejected": 607
+      "accepted": 48,
+      "review": 22,
+      "rejected": 633
     },
     "publicFacility": {
       "label": "公共施設",
@@ -50,9 +50,9 @@
         "区民センター"
       ],
       "candidates": 3451,
-      "accepted": 35,
-      "review": 31,
-      "rejected": 3385
+      "accepted": 36,
+      "review": 17,
+      "rejected": 3398
     },
     "stationUsage": {
       "label": "駅利用",
@@ -73,9 +73,9 @@
         "観光スポット"
       ],
       "candidates": 1521,
-      "accepted": 19,
-      "review": 24,
-      "rejected": 1478
+      "accepted": 20,
+      "review": 13,
+      "rejected": 1488
     }
   },
   "datasets": [
@@ -2293,7 +2293,7 @@
         ],
         "latField": "緯度",
         "lngField": "経度",
-        "nameField": null,
+        "nameField": "タイトル",
         "addressField": "所在地",
         "sampleSize": 50,
         "coordFillRate": 1.0,
@@ -2787,7 +2787,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.79,
-      "reason": "タイトルに「公園」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-09-10",
+      "reason": "タイトルに「公園」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-09-10。jev: park（確信度 1.00、一覧 0.81）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -2800,6 +2800,13 @@
       "lastModified": "2026-09-10T07:38:03.422833",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.81
+      },
       "review": null
     },
     {
@@ -2817,7 +2824,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.79,
-      "reason": "タイトルに「公園」「緑地」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「公園」「緑地」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12。jev: park（確信度 0.99、一覧 0.80）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -2830,6 +2837,13 @@
       "lastModified": "2025-12-12T09:02:13.691641",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.8
+      },
       "review": null
     },
     {
@@ -3144,10 +3158,10 @@
       "datastoreActive": false,
       "locationSource": "geocode",
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "accepted",
+      "autoStatus": "accepted",
       "confidence": 0.735,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。住所充足率 96%（住所）。住所からジオコーディングする。CC-BY-4.0。更新 2020-03-31",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。住所充足率 96%（住所）。住所からジオコーディングする。CC-BY-4.0。更新 2020-03-31。jev: mixed（確信度 0.99、一覧 0.89） → 採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -3211,6 +3225,13 @@
       "lastModified": "2020-03-31T15:00:00",
       "updateFrequency": "未定",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.89
+      },
       "review": null
     },
     {
@@ -3228,7 +3249,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.72,
-      "reason": "タイトルに「公園」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21",
+      "reason": "タイトルに「公園」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21。jev: park（確信度 1.00、一覧 0.76）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -3241,6 +3262,13 @@
       "lastModified": "2018-08-21T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.76
+      },
       "review": null
     },
     {
@@ -3258,7 +3286,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.72,
-      "reason": "タイトルに「公園」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2020-03-22",
+      "reason": "タイトルに「公園」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2020-03-22。jev: park（確信度 1.00、一覧 0.80）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -3271,6 +3299,13 @@
       "lastModified": "2020-03-22T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.8
+      },
       "review": null
     },
     {
@@ -3738,7 +3773,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.715,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12。inspect 失敗: GET https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/006/127/202503212.csv: HTTP 404 (not retried)",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12。inspect 失敗: GET https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/006/127/202503212.csv: HTTP 404 (not retried)。jev: park（確信度 1.00、一覧 0.74）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -3751,6 +3786,13 @@
       "lastModified": "2025-12-12T08:46:57.638376",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.74
+      },
       "review": null
     },
     {
@@ -3915,10 +3957,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.08） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -3931,6 +3973,13 @@
       "lastModified": "2026-02-26T12:18:03.114177",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.08
+      },
       "review": null
     },
     {
@@ -3945,10 +3994,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -3961,6 +4010,13 @@
       "lastModified": "2026-02-26T12:18:30.718957",
       "updateFrequency": "年1回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -4005,10 +4061,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -4021,6 +4077,13 @@
       "lastModified": "2026-02-26T12:15:49.529524",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -4518,7 +4581,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.675,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2022-03-31。inspect 失敗: GET https://www.city.taito.lg.jp/kusei/online/opendata/seikatu/shisethutizujouhou.files/sisetu_15.csv: HTTP 404 (not retried)",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2022-03-31。inspect 失敗: GET https://www.city.taito.lg.jp/kusei/online/opendata/seikatu/shisethutizujouhou.files/sisetu_15.csv: HTTP 404 (not retried)。jev: park（確信度 1.00、一覧 0.67）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -4531,6 +4594,13 @@
       "lastModified": "2022-03-31T15:00:00",
       "updateFrequency": "年1回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.67
+      },
       "review": null
     },
     {
@@ -4788,7 +4858,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.67,
-      "reason": "タイトルに「公園」「緑地」「一覧」を含む。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「公園」「緑地」「一覧」を含む。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12。jev: park（確信度 1.00、一覧 0.80）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -4827,6 +4897,13 @@
       "lastModified": "2025-12-12T09:45:37.757914",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.8
+      },
       "review": null
     },
     {
@@ -5534,7 +5611,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-05-13。inspect 失敗: GET https://www2.wagmap.jp/suginami/OpenDataDetail?lid=959&mids=1: HTTP 404 (not retried)",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-05-13。inspect 失敗: GET https://www2.wagmap.jp/suginami/OpenDataDetail?lid=959&mids=1: HTTP 404 (not retried)。jev: mixed（確信度 0.98、一覧 0.78）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -5547,6 +5624,13 @@
       "lastModified": "2018-05-13T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.78
+      },
       "review": null
     },
     {
@@ -5564,7 +5648,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "タイトルに「公園」「緑地」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-05-13。inspect 失敗: GET https://www2.wagmap.jp/suginami/OpenDataDetail?lid=105&mids=8: HTTP 404 (not retried)",
+      "reason": "タイトルに「公園」「緑地」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-05-13。inspect 失敗: GET https://www2.wagmap.jp/suginami/OpenDataDetail?lid=105&mids=8: HTTP 404 (not retried)。jev: park（確信度 0.58、一覧 0.64）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -5577,6 +5661,13 @@
       "lastModified": "2018-05-13T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.58,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.64
+      },
       "review": null
     },
     {
@@ -5774,7 +5865,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2017-06-19。inspect 失敗: GET https://www.city.machida.tokyo.jp/shisei/opendata/shisetsu/kouen.files/kouen.csv: HTTP 404 (not retried)",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2017-06-19。inspect 失敗: GET https://www.city.machida.tokyo.jp/shisei/opendata/shisetsu/kouen.files/kouen.csv: HTTP 404 (not retried)。jev: park（確信度 0.82、一覧 0.74）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -5787,6 +5878,13 @@
       "lastModified": "2017-06-19T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.82,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.74
+      },
       "review": null
     },
     {
@@ -5804,7 +5902,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30。jev: mixed（確信度 0.61、一覧 0.38）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -5817,6 +5915,13 @@
       "lastModified": "2024-04-30T06:00:00",
       "updateFrequency": "１年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.61,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.38
+      },
       "review": null
     },
     {
@@ -5831,10 +5936,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.63,
-      "reason": "リソース名に「公園」「緑地」を含む（カテゴリ別ファイル）。KML。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-10",
+      "reason": "リソース名に「公園」「緑地」を含む（カテゴリ別ファイル）。KML。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-10。jev: none（確信度 0.81、一覧 0.25） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.7,
@@ -5847,6 +5952,13 @@
       "lastModified": "2019-01-10T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.81,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.25
+      },
       "review": null
     },
     {
@@ -6041,10 +6153,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.615,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -6057,6 +6169,13 @@
       "lastModified": "2018-08-21T15:00:00",
       "updateFrequency": "公開時のみ",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -6071,10 +6190,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.615,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -6087,6 +6206,13 @@
       "lastModified": "2018-08-21T15:00:00",
       "updateFrequency": "公開時のみ",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -6101,10 +6227,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.615,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: none（確信度 0.83、一覧 0.24） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -6117,6 +6243,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.83,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.24
+      },
       "review": null
     },
     {
@@ -6134,7 +6267,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: park（確信度 1.00、一覧 0.74）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -6147,6 +6280,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.74
+      },
       "review": null
     },
     {
@@ -6164,7 +6304,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: none（確信度 0.44、一覧 0.52）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -6177,6 +6317,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.44,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.52
+      },
       "review": null
     },
     {
@@ -6224,7 +6371,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-12-13",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-12-13。jev: park（確信度 0.62、一覧 0.15）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -6237,6 +6384,13 @@
       "lastModified": "2018-12-13T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.62,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.15
+      },
       "review": null
     },
     {
@@ -6284,7 +6438,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-05-09",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-05-09。jev: park（確信度 0.64、一覧 0.14）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -6297,6 +6451,13 @@
       "lastModified": "2019-05-09T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.64,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.14
+      },
       "review": null
     },
     {
@@ -6344,7 +6505,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2020-02-27",
+      "reason": "タイトルに「公園」を含む（一覧を示す語なし）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2020-02-27。jev: park（確信度 0.59、一覧 0.14）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -6357,6 +6518,13 @@
       "lastModified": "2020-02-27T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.59,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.14
+      },
       "review": null
     },
     {
@@ -6434,7 +6602,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.61,
-      "reason": "説明・タグのみに「公園」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-11-28",
+      "reason": "説明・タグのみに「公園」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-11-28。jev: mixed（確信度 0.43、一覧 0.70）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -6447,6 +6615,13 @@
       "lastModified": "2025-11-28T02:16:43.404774",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.43,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.7
+      },
       "review": null
     },
     {
@@ -6491,10 +6666,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.595,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。DataStore(API) 対応 XLS。座標列・住所列が見つからない。CC-BY-4.0。更新 2024-11-28",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。DataStore(API) 対応 XLS。座標列・住所列が見つからない。CC-BY-4.0。更新 2024-11-28。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -6555,6 +6730,13 @@
       "lastModified": "2024-11-28T06:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -9482,7 +9664,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.57,
-      "reason": "説明・タグのみに「公園」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2022-06-29",
+      "reason": "説明・タグのみに「公園」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2022-06-29。jev: publicFacility（確信度 0.49、一覧 0.69）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -9495,6 +9677,13 @@
       "lastModified": "2022-06-29T00:28:34",
       "updateFrequency": "1年",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.49,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.69
+      },
       "review": null
     },
     {
@@ -9509,10 +9698,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-11-27",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-11-27。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -9557,6 +9746,13 @@
       "lastModified": "2025-11-27T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -9571,10 +9767,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.555,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。DataStore(API) 対応 XLS。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-11-10",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。DataStore(API) 対応 XLS。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-11-10。jev: none（確信度 1.00、一覧 0.07） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -9632,6 +9828,13 @@
       "lastModified": "2021-11-10T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.07
+      },
       "review": null
     },
     {
@@ -9646,10 +9849,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.555,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-12-19",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-12-19。jev: none（確信度 0.99、一覧 0.21） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -9676,6 +9879,13 @@
       "lastModified": "2023-12-19T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.21
+      },
       "review": null
     },
     {
@@ -9720,10 +9930,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-12",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-12。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -9753,6 +9963,13 @@
       "lastModified": "2018-04-12T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -9767,10 +9984,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「公園」「緑地」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16",
+      "reason": "リソース名に「公園」「緑地」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16。jev: none（確信度 0.97、一覧 0.08） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -9803,6 +10020,13 @@
       "lastModified": "2018-04-16T15:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.97,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.08
+      },
       "review": null
     },
     {
@@ -9817,10 +10041,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16。jev: none（確信度 0.98、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -9853,6 +10077,13 @@
       "lastModified": "2018-04-16T15:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -9867,10 +10098,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16。jev: none（確信度 0.98、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -9903,6 +10134,13 @@
       "lastModified": "2018-04-16T15:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -9917,10 +10155,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-11-16",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-11-16。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -9962,6 +10200,13 @@
       "lastModified": "2022-11-16T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -9976,10 +10221,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-11-15",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-11-15。jev: none（確信度 1.00、一覧 0.09） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -10022,6 +10267,13 @@
       "lastModified": "2023-11-15T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.09
+      },
       "review": null
     },
     {
@@ -10036,10 +10288,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -10065,6 +10317,13 @@
       "lastModified": "2022-03-31T15:00:00",
       "updateFrequency": "年1回(4月）",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -10079,10 +10338,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31。jev: park（確信度 0.94、一覧 0.09） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -10139,6 +10398,13 @@
       "lastModified": "2022-03-31T15:00:00",
       "updateFrequency": "年1回(4月）",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.94,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.09
+      },
       "review": null
     },
     {
@@ -10156,7 +10422,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.51,
-      "reason": "タイトルに「公園」「緑地」を含む（一覧を示す語なし）。GEOJSON。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-12-13",
+      "reason": "タイトルに「公園」「緑地」を含む（一覧を示す語なし）。GEOJSON。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-12-13。jev: park（確信度 0.98、一覧 0.78）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.9,
@@ -10181,6 +10447,13 @@
       "lastModified": "2018-12-13T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.78
+      },
       "review": null
     },
     {
@@ -11095,10 +11368,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-06-08",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-06-08。jev: none（確信度 1.00、一覧 0.05） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11126,6 +11399,13 @@
       "lastModified": "2021-06-08T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.05
+      },
       "review": null
     },
     {
@@ -11140,10 +11420,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2019-11-19",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2019-11-19。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11184,6 +11464,13 @@
       "lastModified": "2019-11-19T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -11198,10 +11485,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-03-17",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-03-17。jev: none（確信度 1.00、一覧 0.07） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11241,7 +11528,14 @@
       "license": "CC-BY-4.0",
       "lastModified": "2021-03-17T15:00:00",
       "updateFrequency": "随時",
-      "duplicateOf": "t000008d0000000032",
+      "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.07
+      },
       "review": null
     },
     {
@@ -11256,10 +11550,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-11-20",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-11-20。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11309,6 +11603,13 @@
       "lastModified": "2018-11-20T15:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -11323,10 +11624,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2020-03-30",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2020-03-30。jev: none（確信度 0.78、一覧 0.05） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11357,6 +11658,13 @@
       "lastModified": "2020-03-30T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.78,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.05
+      },
       "review": null
     },
     {
@@ -11374,7 +11682,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.495,
-      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-01-22",
+      "reason": "リソース名に「緑地」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-01-22。jev: park（確信度 0.59、一覧 0.09）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11400,6 +11708,13 @@
       "lastModified": "2021-01-22T05:26:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.59,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.09
+      },
       "review": null
     },
     {
@@ -11417,7 +11732,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.495,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2019-03-28",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2019-03-28。jev: none（確信度 0.66、一覧 0.11）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11456,6 +11771,13 @@
       "lastModified": "2019-03-28T06:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.66,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.11
+      },
       "review": null
     },
     {
@@ -11470,10 +11792,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-01-23",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-01-23。jev: none（確信度 0.86、一覧 0.29） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11502,6 +11824,13 @@
       "lastModified": "2018-01-23T06:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.86,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.29
+      },
       "review": null
     },
     {
@@ -11516,10 +11845,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-01-30",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-01-30。jev: park（確信度 0.79、一覧 0.08） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11548,6 +11877,13 @@
       "lastModified": "2021-01-30T04:11:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.79,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.08
+      },
       "review": null
     },
     {
@@ -11565,7 +11901,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.495,
-      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-16",
+      "reason": "リソース名に「公園」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-16。jev: park（確信度 0.42、一覧 0.35）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -11592,6 +11928,13 @@
       "lastModified": "2021-02-16T07:37:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "park",
+        "confidence": 0.42,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.35
+      },
       "review": null
     },
     {
@@ -25407,7 +25750,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.82,
-      "reason": "タイトルに「文化財」「一覧」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-09-02。inspect 失敗: GET https://www.city.suginami.tokyo.jp/documents/7581/131156_cultural_property.csv: HTTP 404 (not retried)",
+      "reason": "タイトルに「文化財」「一覧」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-09-02。inspect 失敗: GET https://www.city.suginami.tokyo.jp/documents/7581/131156_cultural_property.csv: HTTP 404 (not retried)。jev: culture（確信度 1.00、一覧 0.47）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -25420,6 +25763,13 @@
       "lastModified": "2025-09-02T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.47
+      },
       "review": null
     },
     {
@@ -25801,7 +26151,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.79,
-      "reason": "タイトルに「博物館」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-09",
+      "reason": "タイトルに「博物館」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-09。jev: culture（確信度 1.00、一覧 0.81）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -25814,6 +26164,13 @@
       "lastModified": "2026-06-09T01:21:39",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.81
+      },
       "review": null
     },
     {
@@ -25831,7 +26188,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.79,
-      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-03-25",
+      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-03-25。jev: culture（確信度 1.00、一覧 0.50）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -25844,6 +26201,13 @@
       "lastModified": "2025-03-25T07:40:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.5
+      },
       "review": null
     },
     {
@@ -25861,7 +26225,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30",
+      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30。jev: culture（確信度 1.00、一覧 0.51）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -25874,6 +26238,13 @@
       "lastModified": "2024-04-30T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.51
+      },
       "review": null
     },
     {
@@ -25891,7 +26262,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-21",
+      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-21。jev: culture（確信度 1.00、一覧 0.59）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -25904,6 +26275,13 @@
       "lastModified": "2024-03-21T03:27:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.59
+      },
       "review": null
     },
     {
@@ -25921,7 +26299,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-03",
+      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-03。jev: culture（確信度 1.00、一覧 0.43）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -25934,6 +26312,13 @@
       "lastModified": "2024-03-03T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.43
+      },
       "review": null
     },
     {
@@ -25951,7 +26336,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-12-14",
+      "reason": "タイトルに「文化財」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-12-14。jev: culture（確信度 1.00、一覧 0.47）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -25964,6 +26349,13 @@
       "lastModified": "2023-12-14T15:00:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.47
+      },
       "review": null
     },
     {
@@ -26218,10 +26610,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.745,
-      "reason": "リソース名に「博物館」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-09-04。inspect 失敗: GET https://catalog.data.metro.tokyo.lg.jp/api/3/action/datastore_search?limit=50&resource_id=2f2dfe10-3438-439e-96f5-fef36d9dd733: HTTP 404 (not retried)",
+      "reason": "リソース名に「博物館」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-09-04。inspect 失敗: GET https://catalog.data.metro.tokyo.lg.jp/api/3/action/datastore_search?limit=50&resource_id=2f2dfe10-3438-439e-96f5-fef36d9dd733: HTTP 404 (not retried)。jev: none（確信度 0.99、一覧 0.42） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -26234,6 +26626,13 @@
       "lastModified": "2026-09-04T06:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.42
+      },
       "review": null
     },
     {
@@ -26278,10 +26677,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.715,
-      "reason": "リソース名に「文化財」を含む（カテゴリ別ファイル）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-03-27。inspect 失敗: GET https://www.toukei.metro.tokyo.lg.jp/kurasi/2025/csv/ku25rv0930.csv: HTTP 404 (not retried)",
+      "reason": "リソース名に「文化財」を含む（カテゴリ別ファイル）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-03-27。inspect 失敗: GET https://www.toukei.metro.tokyo.lg.jp/kurasi/2025/csv/ku25rv0930.csv: HTTP 404 (not retried)。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -26294,6 +26693,13 @@
       "lastModified": "2025-03-27T05:00:00",
       "updateFrequency": "１年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -26578,10 +26984,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-04",
+      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-04。jev: culture（確信度 0.97、一覧 0.18） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -26594,6 +27000,13 @@
       "lastModified": "2026-06-04T03:12:49.279444",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 0.97,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.18
+      },
       "review": null
     },
     {
@@ -26608,10 +27021,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「博物館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「博物館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.08） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -26624,6 +27037,13 @@
       "lastModified": "2026-02-26T12:18:03.114177",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.08
+      },
       "review": null
     },
     {
@@ -26638,10 +27058,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「博物館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「博物館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -26654,6 +27074,13 @@
       "lastModified": "2026-02-26T12:18:30.718957",
       "updateFrequency": "年1回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -26668,10 +27095,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-01-06",
+      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-01-06。jev: culture（確信度 0.97、一覧 0.18） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -26683,7 +27110,14 @@
       "license": "CC-BY-4.0",
       "lastModified": "2026-01-06T03:00:00",
       "updateFrequency": "年１回",
-      "duplicateOf": "t131113d0000000236",
+      "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 0.97,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.18
+      },
       "review": null
     },
     {
@@ -26698,10 +27132,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「博物館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「博物館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -26714,6 +27148,13 @@
       "lastModified": "2026-02-26T12:15:49.529524",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -27181,7 +27622,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.67,
-      "reason": "タイトルに「文化財」「一覧」を含む。CSV。座標充足率 0%（緯度・経度）。座標・住所とも値がない。CC-BY-4.0。更新 2025-03-03",
+      "reason": "タイトルに「文化財」「一覧」を含む。CSV。座標充足率 0%（緯度・経度）。座標・住所とも値がない。CC-BY-4.0。更新 2025-03-03。jev: culture（確信度 1.00、一覧 0.39）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -27250,6 +27691,13 @@
       "lastModified": "2025-03-03T00:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.39
+      },
       "review": null
     },
     {
@@ -27267,7 +27715,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.67,
-      "reason": "タイトルに「文化財」「一覧」を含む。CSV。座標充足率 0%（緯度・経度）。座標・住所とも値がない。CC-BY-4.0。更新 2025-02-26",
+      "reason": "タイトルに「文化財」「一覧」を含む。CSV。座標充足率 0%（緯度・経度）。座標・住所とも値がない。CC-BY-4.0。更新 2025-02-26。jev: culture（確信度 1.00、一覧 0.39）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -27336,6 +27784,13 @@
       "lastModified": "2025-02-26T00:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.39
+      },
       "review": null
     },
     {
@@ -27503,7 +27958,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "リソース名に「文化財」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30",
+      "reason": "リソース名に「文化財」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30。jev: mixed（確信度 0.61、一覧 0.38）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -27516,6 +27971,13 @@
       "lastModified": "2024-04-30T06:00:00",
       "updateFrequency": "１年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.61,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.38
+      },
       "review": null
     },
     {
@@ -27560,10 +28022,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.63,
-      "reason": "リソース名に「美術館」を含む（カテゴリ別ファイル）。KML。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-10",
+      "reason": "リソース名に「美術館」を含む（カテゴリ別ファイル）。KML。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-10。jev: none（確信度 0.81、一覧 0.25） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.7,
@@ -27576,6 +28038,13 @@
       "lastModified": "2019-01-10T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.81,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.25
+      },
       "review": null
     },
     {
@@ -27740,10 +28209,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.615,
-      "reason": "リソース名に「文化財」「美術館」「資料館」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21",
+      "reason": "リソース名に「文化財」「美術館」「資料館」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -27756,6 +28225,13 @@
       "lastModified": "2018-08-21T15:00:00",
       "updateFrequency": "公開時のみ",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -27770,10 +28246,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.615,
-      "reason": "リソース名に「文化財」「美術館」「資料館」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21",
+      "reason": "リソース名に「文化財」「美術館」「資料館」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -27786,6 +28262,13 @@
       "lastModified": "2018-08-21T15:00:00",
       "updateFrequency": "公開時のみ",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -27803,7 +28286,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: culture（確信度 0.99、一覧 0.38）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -27816,6 +28299,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.38
+      },
       "review": null
     },
     {
@@ -27833,7 +28323,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: culture（確信度 0.99、一覧 0.40）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -27846,6 +28336,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.4
+      },
       "review": null
     },
     {
@@ -27860,10 +28357,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.615,
-      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「博物館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: culture（確信度 0.85、一覧 0.29） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -27876,6 +28373,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 0.85,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.29
+      },
       "review": null
     },
     {
@@ -27893,7 +28397,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「文化財」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「文化財」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: culture（確信度 0.99、一覧 0.46）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -27906,6 +28410,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "culture",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.46
+      },
       "review": null
     },
     {
@@ -27923,7 +28434,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.61,
-      "reason": "説明・タグのみに「文化施設」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-11-28",
+      "reason": "説明・タグのみに「文化施設」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-11-28。jev: mixed（確信度 0.43、一覧 0.70）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -27936,6 +28447,13 @@
       "lastModified": "2025-11-28T02:16:43.404774",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.43,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.7
+      },
       "review": null
     },
     {
@@ -28223,7 +28741,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.525,
-      "reason": "リソース名に「文化財」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-12",
+      "reason": "リソース名に「文化財」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-12。jev: none（確信度 0.50、一覧 0.06）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -28252,6 +28770,13 @@
       "lastModified": "2018-04-12T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.5,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -28266,10 +28791,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「博物館」「美術館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-08",
+      "reason": "リソース名に「博物館」「美術館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-08。jev: none（確信度 1.00、一覧 0.13） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -28299,6 +28824,13 @@
       "lastModified": "2022-03-08T04:07:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.13
+      },
       "review": null
     },
     {
@@ -28316,7 +28848,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.525,
-      "reason": "リソース名に「博物館」「美術館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31",
+      "reason": "リソース名に「博物館」「美術館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31。jev: none（確信度 0.44、一覧 0.06）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -28349,6 +28881,13 @@
       "lastModified": "2022-03-31T15:00:00",
       "updateFrequency": "年1回(4月）",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.44,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -101052,7 +101591,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.79,
-      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。CSV。座標充足率 60%（緯度・経度）。CC-BY-4.0。更新 2025-05-26",
+      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。CSV。座標充足率 60%（緯度・経度）。CC-BY-4.0。更新 2025-05-26。jev: mixed（確信度 0.87、一覧 0.90）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -101191,6 +101730,13 @@
       "lastModified": "2025-05-26T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.87,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.9
+      },
       "review": null
     },
     {
@@ -101208,7 +101754,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.79,
-      "reason": "タイトルに「公共施設」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-03-25",
+      "reason": "タイトルに「公共施設」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-03-25。jev: mixed（確信度 0.41、一覧 0.73）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -101221,6 +101767,13 @@
       "lastModified": "2025-03-25T07:42:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.41,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.73
+      },
       "review": null
     },
     {
@@ -101338,11 +101891,11 @@
       "format": "csv",
       "datastoreActive": false,
       "locationSource": null,
-      "rowFilter": false,
+      "rowFilter": true,
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「公共施設」「情報」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-05-13。inspect 失敗: GET https://www2.wagmap.jp/suginami/OpenDataDetail?lid=956&mids=1: HTTP 404 (not retried)",
+      "reason": "タイトルに「公共施設」「情報」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-05-13。inspect 失敗: GET https://www2.wagmap.jp/suginami/OpenDataDetail?lid=956&mids=1: HTTP 404 (not retried)。jev: mixed（確信度 0.98、一覧 0.78）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -101355,6 +101908,13 @@
       "lastModified": "2018-05-13T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.78
+      },
       "review": null
     },
     {
@@ -101372,7 +101932,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「公共施設」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-21",
+      "reason": "タイトルに「公共施設」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-21。jev: mixed（確信度 0.52、一覧 0.77）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -101385,6 +101945,13 @@
       "lastModified": "2024-03-21T03:27:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.52,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.77
+      },
       "review": null
     },
     {
@@ -101402,7 +101969,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「公共施設」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-01-31",
+      "reason": "タイトルに「公共施設」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-01-31。jev: mixed（確信度 0.36、一覧 0.72）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -101415,6 +101982,13 @@
       "lastModified": "2023-01-31T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.36,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.72
+      },
       "review": null
     },
     {
@@ -101432,7 +102006,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「公共施設」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-12-14",
+      "reason": "タイトルに「公共施設」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-12-14。jev: mixed（確信度 0.42、一覧 0.72）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -101445,6 +102019,13 @@
       "lastModified": "2023-12-14T15:00:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.42,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.72
+      },
       "review": null
     },
     {
@@ -101459,10 +102040,10 @@
       "datastoreActive": false,
       "locationSource": "geocode",
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "accepted",
+      "autoStatus": "accepted",
       "confidence": 0.735,
-      "reason": "タイトルに「集会施設」を含む（一覧を示す語なし）。CSV。座標充足率 0%（緯度・経度）。住所充足率 100%（所在地）。住所からジオコーディングする。CC-BY-4.0。更新 2017-09-19",
+      "reason": "タイトルに「集会施設」を含む（一覧を示す語なし）。CSV。座標充足率 0%（緯度・経度）。住所充足率 100%（所在地）。住所からジオコーディングする。CC-BY-4.0。更新 2017-09-19。jev: publicFacility（確信度 1.00、一覧 0.90） → 採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -101503,6 +102084,13 @@
       "lastModified": "2017-09-19T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.9
+      },
       "review": null
     },
     {
@@ -101517,10 +102105,10 @@
       "datastoreActive": false,
       "locationSource": "geocode",
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.735,
-      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。CSV。座標充足率 0%（緯度・経度）。住所充足率 100%（所在地）。住所からジオコーディングする。CC-BY-4.0。更新 2018-12-25",
+      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。CSV。座標充足率 0%（緯度・経度）。住所充足率 100%（所在地）。住所からジオコーディングする。CC-BY-4.0。更新 2018-12-25。jev: none（確信度 0.81、一覧 0.78） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -101552,6 +102140,13 @@
       "lastModified": "2018-12-25T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.81,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.78
+      },
       "review": null
     },
     {
@@ -101566,10 +102161,10 @@
       "datastoreActive": false,
       "locationSource": "geocode",
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.735,
-      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。CSV。座標充足率 0%（緯度・経度）。住所充足率 100%（所在地）。住所からジオコーディングする。CC-BY-4.0。更新 2019-10-07",
+      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。CSV。座標充足率 0%（緯度・経度）。住所充足率 100%（所在地）。住所からジオコーディングする。CC-BY-4.0。更新 2019-10-07。jev: none（確信度 0.96、一覧 0.67） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -101614,6 +102209,13 @@
       "lastModified": "2019-10-07T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.96,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.67
+      },
       "review": null
     },
     {
@@ -101661,7 +102263,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.715,
-      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12。inspect 失敗: GET https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/006/127/202503211.csv: HTTP 404 (not retried)",
+      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12。inspect 失敗: GET https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/006/127/202503211.csv: HTTP 404 (not retried)。jev: publicFacility（確信度 0.46、一覧 0.73）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -101674,6 +102276,13 @@
       "lastModified": "2025-12-12T08:46:50.601619",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.46,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.73
+      },
       "review": null
     },
     {
@@ -101811,7 +102420,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.715,
-      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12。inspect 失敗: GET https://www.city.tama.lg.jp/_res/projects/default_project/_page_/001/004/565/softbank-wifi.csv: HTTP 404 (not retried)",
+      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12。inspect 失敗: GET https://www.city.tama.lg.jp/_res/projects/default_project/_page_/001/004/565/softbank-wifi.csv: HTTP 404 (not retried)。jev: publicFacility（確信度 0.41、一覧 0.35）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -101824,6 +102433,13 @@
       "lastModified": "2025-12-12T09:59:01.452015",
       "updateFrequency": "都度更新",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.41,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.35
+      },
       "review": null
     },
     {
@@ -101958,10 +102574,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-12-05",
+      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-12-05。jev: none（確信度 1.00、一覧 0.02） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -101974,6 +102590,13 @@
       "lastModified": "2024-12-05T04:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.02
+      },
       "review": null
     },
     {
@@ -101988,10 +102611,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-05",
+      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-05。jev: none（確信度 1.00、一覧 0.02） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102004,6 +102627,13 @@
       "lastModified": "2025-12-05T04:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.02
+      },
       "review": null
     },
     {
@@ -102018,10 +102648,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "タイトルに「区民センター」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-04",
+      "reason": "タイトルに「区民センター」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-04。jev: publicFacility（確信度 0.98、一覧 0.29） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102034,6 +102664,13 @@
       "lastModified": "2026-06-04T03:11:23.636246",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.29
+      },
       "review": null
     },
     {
@@ -102048,10 +102685,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「区民センター」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「区民センター」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.08） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102064,6 +102701,13 @@
       "lastModified": "2026-02-26T12:18:03.114177",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.08
+      },
       "review": null
     },
     {
@@ -102078,10 +102722,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「区民センター」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「区民センター」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102094,6 +102738,13 @@
       "lastModified": "2026-02-26T12:18:30.718957",
       "updateFrequency": "年1回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -102108,10 +102759,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "タイトルに「区民センター」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-01-06",
+      "reason": "タイトルに「区民センター」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-01-06。jev: publicFacility（確信度 0.98、一覧 0.29） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102123,7 +102774,14 @@
       "license": "CC-BY-4.0",
       "lastModified": "2026-01-06T03:00:00",
       "updateFrequency": "年１回",
-      "duplicateOf": "t131113d0000000182",
+      "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.29
+      },
       "review": null
     },
     {
@@ -102138,10 +102796,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「区民センター」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「区民センター」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102154,6 +102812,13 @@
       "lastModified": "2026-02-26T12:15:49.529524",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -102171,7 +102836,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.685,
-      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-06-02",
+      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-06-02。jev: publicFacility（確信度 0.44、一覧 0.15）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102184,6 +102849,13 @@
       "lastModified": "2025-06-02T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.44,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.15
+      },
       "review": null
     },
     {
@@ -102201,7 +102873,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.685,
-      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-05-24",
+      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-05-24。jev: publicFacility（確信度 0.41、一覧 0.14）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102214,6 +102886,13 @@
       "lastModified": "2026-05-24T15:00:00",
       "updateFrequency": null,
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.41,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.14
+      },
       "review": null
     },
     {
@@ -102411,7 +103090,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.675,
-      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2022-06-29。inspect 失敗: GET https://data.bodik.jp/dataset/8fb2f443-a8fd-47c6-a527-6a961fca8928/resource/f119ff15-e5e1-44e7-836f-aa5e20c9a46c/download/131105_public_facility_20220616.csv: HTTP 403 (not retried)",
+      "reason": "タイトルに「公共施設」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2022-06-29。inspect 失敗: GET https://data.bodik.jp/dataset/8fb2f443-a8fd-47c6-a527-6a961fca8928/resource/f119ff15-e5e1-44e7-836f-aa5e20c9a46c/download/131105_public_facility_20220616.csv: HTTP 403 (not retried)。jev: publicFacility（確信度 0.49、一覧 0.69）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -102424,6 +103103,13 @@
       "lastModified": "2022-06-29T00:28:34",
       "updateFrequency": "1年",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.49,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.69
+      },
       "review": null
     },
     {
@@ -102498,10 +103184,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.645,
-      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-12-15",
+      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-12-15。jev: none（確信度 1.00、一覧 0.02） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102514,6 +103200,13 @@
       "lastModified": "2023-12-15T05:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.02
+      },
       "review": null
     },
     {
@@ -102621,7 +103314,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30",
+      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30。jev: mixed（確信度 0.61、一覧 0.38）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -102634,6 +103327,13 @@
       "lastModified": "2024-04-30T06:00:00",
       "updateFrequency": "１年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.61,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.38
+      },
       "review": null
     },
     {
@@ -102648,10 +103348,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.61,
-      "reason": "説明・タグのみに「公共施設」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-11-30",
+      "reason": "説明・タグのみに「公共施設」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-11-30。jev: none（確信度 0.96、一覧 0.56） → 不採用",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -102664,6 +103364,13 @@
       "lastModified": "2024-11-30T15:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.96,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.56
+      },
       "review": null
     },
     {
@@ -102681,7 +103388,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.61,
-      "reason": "説明・タグのみに「地域センター」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-01-27",
+      "reason": "説明・タグのみに「地域センター」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-01-27。jev: none（確信度 0.43、一覧 0.05）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -102694,6 +103401,13 @@
       "lastModified": "2025-01-27T02:45:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.43,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.05
+      },
       "review": null
     },
     {
@@ -102948,10 +103662,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.57,
-      "reason": "説明・タグのみに「地域センター」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-28",
+      "reason": "説明・タグのみに「地域センター」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-28。jev: none（確信度 0.98、一覧 0.12） → 不採用",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -102964,6 +103678,13 @@
       "lastModified": "2024-03-28T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.12
+      },
       "review": null
     },
     {
@@ -103041,7 +103762,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.57,
-      "reason": "説明・タグのみに「地域センター」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-12-13",
+      "reason": "説明・タグのみに「地域センター」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2023-12-13。jev: none（確信度 0.43、一覧 0.05）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -103054,6 +103775,13 @@
       "lastModified": "2023-12-13T01:03:00",
       "updateFrequency": "年１回",
       "duplicateOf": "t132195d0000000244",
+      "semantic": {
+        "category": "none",
+        "confidence": 0.43,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.05
+      },
       "review": null
     },
     {
@@ -103098,10 +103826,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.54,
-      "reason": "説明・タグのみに「公共施設」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-12-27",
+      "reason": "説明・タグのみに「公共施設」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-12-27。jev: none（確信度 0.97、一覧 0.27） → 不採用",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -103114,6 +103842,13 @@
       "lastModified": "2018-12-27T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.97,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.27
+      },
       "review": null
     },
     {
@@ -103191,7 +103926,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.525,
-      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31",
+      "reason": "リソース名に「公共施設」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31。jev: publicFacility（確信度 0.68、一覧 0.07）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -103232,6 +103967,13 @@
       "lastModified": "2022-03-31T15:00:00",
       "updateFrequency": "年1回(4月）",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.68,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.07
+      },
       "review": null
     },
     {
@@ -205233,7 +205975,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.78,
-      "reason": "タイトルに「観光」「観光施設」「一覧」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-06-18。inspect 失敗: GET https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619tourism.csv: HTTP 404 (not retried)",
+      "reason": "タイトルに「観光」「観光施設」「一覧」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-06-18。inspect 失敗: GET https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619tourism.csv: HTTP 404 (not retried)。jev: tourism（確信度 1.00、一覧 0.79）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -205246,6 +205988,13 @@
       "lastModified": "2024-06-18T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.79
+      },
       "review": null
     },
     {
@@ -205293,7 +206042,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「観光」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-21",
+      "reason": "タイトルに「観光」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-21。jev: tourism（確信度 0.99、一覧 0.77）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -205306,6 +206055,13 @@
       "lastModified": "2024-03-21T03:27:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.77
+      },
       "review": null
     },
     {
@@ -205323,7 +206079,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「観光」「観光スポット」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-21",
+      "reason": "タイトルに「観光」「観光スポット」「一覧」を含む。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-03-21。jev: tourism（確信度 1.00、一覧 0.79）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.6,
@@ -205336,6 +206092,13 @@
       "lastModified": "2024-03-21T03:27:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.79
+      },
       "review": null
     },
     {
@@ -205353,7 +206116,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.75,
-      "reason": "タイトルに「観光」「観光スポット」「一覧」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2017-12-13。inspect 失敗: GET http://www.town.hachijo.tokyo.jp/kakuka/kikaku_zaisei/data/sightseeing.csv: HTTP 403 (not retried)",
+      "reason": "タイトルに「観光」「観光スポット」「一覧」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2017-12-13。inspect 失敗: GET http://www.town.hachijo.tokyo.jp/kakuka/kikaku_zaisei/data/sightseeing.csv: HTTP 403 (not retried)。jev: tourism（確信度 1.00、一覧 0.82）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -205366,6 +206129,13 @@
       "lastModified": "2017-12-13T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.82
+      },
       "review": null
     },
     {
@@ -205380,10 +206150,10 @@
       "datastoreActive": false,
       "locationSource": "geocode",
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "accepted",
+      "autoStatus": "accepted",
       "confidence": 0.735,
-      "reason": "リソース名に「観光」「観光施設」を含む（カテゴリ別ファイル）。CSV。住所充足率 100%（住所）。住所からジオコーディングする。CC-BY-4.0。更新 2020-03-31",
+      "reason": "リソース名に「観光」「観光施設」を含む（カテゴリ別ファイル）。CSV。住所充足率 100%（住所）。住所からジオコーディングする。CC-BY-4.0。更新 2020-03-31。jev: mixed（確信度 0.99、一覧 0.89） → 採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -205447,6 +206217,13 @@
       "lastModified": "2020-03-31T15:00:00",
       "updateFrequency": "未定",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.89
+      },
       "review": null
     },
     {
@@ -205521,10 +206298,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.715,
-      "reason": "リソース名に「観光」「観光施設」を含む（カテゴリ別ファイル）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-03-16。inspect 失敗: CSV has no header",
+      "reason": "リソース名に「観光」「観光施設」を含む（カテゴリ別ファイル）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-03-16。inspect 失敗: CSV has no header。jev: none（確信度 1.00、一覧 0.05） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -205537,6 +206314,13 @@
       "lastModified": "2026-03-16T10:26:09.271902",
       "updateFrequency": "公開時のみ",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.05
+      },
       "review": null
     },
     {
@@ -205824,7 +206608,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.685,
-      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-04",
+      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-04。jev: tourism（確信度 0.43、一覧 0.18）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -205837,6 +206621,13 @@
       "lastModified": "2026-06-04T03:11:19.405035",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 0.43,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.18
+      },
       "review": null
     },
     {
@@ -205851,10 +206642,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.08） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -205867,6 +206658,13 @@
       "lastModified": "2026-02-26T12:18:03.114177",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.08
+      },
       "review": null
     },
     {
@@ -205884,7 +206682,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.685,
-      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-01-06",
+      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-01-06。jev: tourism（確信度 0.43、一覧 0.18）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -205897,6 +206695,13 @@
       "lastModified": "2026-01-06T03:00:00",
       "updateFrequency": "年１回",
       "duplicateOf": "t131113d0000000179",
+      "semantic": {
+        "category": "tourism",
+        "confidence": 0.43,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.18
+      },
       "review": null
     },
     {
@@ -205911,10 +206716,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -205927,6 +206732,13 @@
       "lastModified": "2026-02-26T12:15:49.529524",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -206154,7 +206966,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.66,
-      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。GEOJSON。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2020-03-12。inspect 失敗: GET https://opendata.city.minato.tokyo.jp/dataset/1de129d1-ea9f-4cc7-8e17-4f02bf57e4d1/resource/bd865e0d-1b6f-4cd6-8c62-e6377f44d9a5/download/minato_shukuhakushisetsu.json: HTTP 403 (not retried)",
+      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。GEOJSON。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2020-03-12。inspect 失敗: GET https://opendata.city.minato.tokyo.jp/dataset/1de129d1-ea9f-4cc7-8e17-4f02bf57e4d1/resource/bd865e0d-1b6f-4cd6-8c62-e6377f44d9a5/download/minato_shukuhakushisetsu.json: HTTP 403 (not retried)。jev: tourism（確信度 0.75、一覧 0.74）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.9,
@@ -206167,6 +206979,13 @@
       "lastModified": "2020-03-12T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 0.75,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.74
+      },
       "review": null
     },
     {
@@ -206514,7 +207333,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "リソース名に「観光」「観光施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30",
+      "reason": "リソース名に「観光」「観光施設」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2024-04-30。jev: mixed（確信度 0.61、一覧 0.38）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -206527,6 +207346,13 @@
       "lastModified": "2024-04-30T06:00:00",
       "updateFrequency": "１年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.61,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.38
+      },
       "review": null
     },
     {
@@ -206541,10 +207367,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.63,
-      "reason": "リソース名に「名所」「観光」を含む（カテゴリ別ファイル）。KML。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-10",
+      "reason": "リソース名に「名所」「観光」を含む（カテゴリ別ファイル）。KML。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-10。jev: none（確信度 0.81、一覧 0.25） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.7,
@@ -206557,6 +207383,13 @@
       "lastModified": "2019-01-10T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.81,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.25
+      },
       "review": null
     },
     {
@@ -206574,7 +207407,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.63,
-      "reason": "タイトルに「観光」「一覧」を含む。CSV。座標充足率 0%（観光ポイント_緯度・観光ポイント_経度）。座標・住所とも値がない。CC-BY-4.0。更新 2024-06-18",
+      "reason": "タイトルに「観光」「一覧」を含む。CSV。座標充足率 0%（観光ポイント_緯度・観光ポイント_経度）。座標・住所とも値がない。CC-BY-4.0。更新 2024-06-18。jev: tourism（確信度 1.00、一覧 0.92）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -206611,6 +207444,13 @@
       "lastModified": "2024-06-18T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.92
+      },
       "review": null
     },
     {
@@ -206868,7 +207708,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.61,
-      "reason": "説明・タグのみに「観光」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12",
+      "reason": "説明・タグのみに「観光」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-12-12。jev: tourism（確信度 0.97、一覧 0.66）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -206881,6 +207721,13 @@
       "lastModified": "2025-12-12T09:01:54.620548",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 0.97,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.66
+      },
       "review": null
     },
     {
@@ -207348,7 +208195,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.565,
-      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-08-31",
+      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-08-31。jev: tourism（確信度 1.00、一覧 0.81）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -207376,6 +208223,13 @@
       "lastModified": "2025-08-31T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.81
+      },
       "review": null
     },
     {
@@ -207393,7 +208247,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.565,
-      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。CSV。座標充足率 0%（観光ポイント_緯度・観光ポイント_経度）。座標・住所とも値がない。CC-BY-4.0。更新 2025-03-13",
+      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。CSV。座標充足率 0%（観光ポイント_緯度・観光ポイント_経度）。座標・住所とも値がない。CC-BY-4.0。更新 2025-03-13。jev: tourism（確信度 1.00、一覧 0.90）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -207430,6 +208284,13 @@
       "lastModified": "2025-03-13T15:00:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.9
+      },
       "review": null
     },
     {
@@ -207624,10 +208485,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-12",
+      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-12。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -207659,6 +208520,13 @@
       "lastModified": "2018-04-12T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -207673,10 +208541,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-12",
+      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-12。jev: none（確信度 1.00、一覧 0.24） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -207708,6 +208576,13 @@
       "lastModified": "2018-04-12T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.24
+      },
       "review": null
     },
     {
@@ -207722,10 +208597,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16",
+      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16。jev: none（確信度 1.00、一覧 0.04） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -207758,6 +208633,13 @@
       "lastModified": "2018-04-16T15:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.04
+      },
       "review": null
     },
     {
@@ -207772,10 +208654,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16",
+      "reason": "リソース名に「観光」を含む（カテゴリ別ファイル）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2018-04-16。jev: none（確信度 0.98、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -207808,6 +208690,13 @@
       "lastModified": "2018-04-16T15:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -207825,7 +208714,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.525,
-      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。CSV。座標充足率 0%（観光ポイント_緯度・観光ポイント_経度）。座標・住所とも値がない。CC-BY-4.0。更新 2024-03-05",
+      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。CSV。座標充足率 0%（観光ポイント_緯度・観光ポイント_経度）。座標・住所とも値がない。CC-BY-4.0。更新 2024-03-05。jev: tourism（確信度 1.00、一覧 0.90）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -207862,6 +208751,13 @@
       "lastModified": "2024-03-05T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.9
+      },
       "review": null
     },
     {
@@ -211926,10 +212822,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2019-04-11",
+      "reason": "タイトルに「観光」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2019-04-11。jev: none（確信度 0.98、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -211956,6 +212852,13 @@
       "lastModified": "2019-04-11T15:00:00",
       "updateFrequency": "不定期",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -211970,10 +212873,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「観光」「観光施設」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2020-03-17",
+      "reason": "リソース名に「観光」「観光施設」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2020-03-17。jev: tourism（確信度 0.92、一覧 0.24） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -212012,6 +212915,13 @@
       "lastModified": "2020-03-17T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "tourism",
+        "confidence": 0.92,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.24
+      },
       "review": null
     },
     {
@@ -250866,7 +251776,7 @@
         ],
         "latField": "緯度",
         "lngField": "経度",
-        "nameField": null,
+        "nameField": "タイトル",
         "addressField": "所在地",
         "sampleSize": 28,
         "coordFillRate": 1.0,
@@ -258955,7 +259865,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.685,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-04",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-06-04。jev: library（確信度 0.85、一覧 0.68）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -258968,6 +259878,13 @@
       "lastModified": "2026-06-04T03:12:45.790576",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.85,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.68
+      },
       "review": null
     },
     {
@@ -258982,10 +259899,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.08） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -258998,6 +259915,13 @@
       "lastModified": "2026-02-26T12:18:03.114177",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.08
+      },
       "review": null
     },
     {
@@ -259012,10 +259936,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -259028,6 +259952,13 @@
       "lastModified": "2026-02-26T12:18:30.718957",
       "updateFrequency": "年1回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -259105,7 +260036,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.685,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-01-06",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-01-06。jev: library（確信度 0.85、一覧 0.65）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -259118,6 +260049,13 @@
       "lastModified": "2026-01-06T03:00:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.85,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.65
+      },
       "review": null
     },
     {
@@ -259132,10 +260070,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.685,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2026-02-26。jev: none（確信度 1.00、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -259148,6 +260086,13 @@
       "lastModified": "2026-02-26T12:15:49.529524",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -259705,7 +260650,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-05-13。inspect 失敗: GET https://www2.wagmap.jp/suginami/OpenDataDetail?lid=957&mids=1: HTTP 404 (not retried)",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-05-13。inspect 失敗: GET https://www2.wagmap.jp/suginami/OpenDataDetail?lid=957&mids=1: HTTP 404 (not retried)。jev: mixed（確信度 0.98、一覧 0.78）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -259718,6 +260663,13 @@
       "lastModified": "2018-05-13T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.78
+      },
       "review": null
     },
     {
@@ -259825,7 +260777,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.645,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2017-03-19。inspect 失敗: GET https://www.city.machida.tokyo.jp/shisei/opendata/shisetsu/toshokan.files/toshokan.csv: HTTP 404 (not retried)",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2017-03-19。inspect 失敗: GET https://www.city.machida.tokyo.jp/shisei/opendata/shisetsu/toshokan.files/toshokan.csv: HTTP 404 (not retried)。jev: library（確信度 0.47、一覧 0.63）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -259838,6 +260790,13 @@
       "lastModified": "2017-03-19T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.47,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.63
+      },
       "review": null
     },
     {
@@ -260032,10 +260991,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.615,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260048,6 +261007,13 @@
       "lastModified": "2018-08-21T15:00:00",
       "updateFrequency": "公開時のみ",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -260062,10 +261028,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.615,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。XLS。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2018-08-21。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260078,6 +261044,13 @@
       "lastModified": "2018-08-21T15:00:00",
       "updateFrequency": "公開時のみ",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -260095,7 +261068,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.45）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260108,6 +261081,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.45
+      },
       "review": null
     },
     {
@@ -260125,7 +261105,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.42）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260138,6 +261118,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.42
+      },
       "review": null
     },
     {
@@ -260155,7 +261142,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.41）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260168,6 +261155,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.41
+      },
       "review": null
     },
     {
@@ -260185,7 +261179,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.88、一覧 0.41）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260198,6 +261192,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.88,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.41
+      },
       "review": null
     },
     {
@@ -260215,7 +261216,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.39）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260228,6 +261229,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.39
+      },
       "review": null
     },
     {
@@ -260245,7 +261253,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.39）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260258,6 +261266,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.39
+      },
       "review": null
     },
     {
@@ -260275,7 +261290,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.34）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260288,6 +261303,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.34
+      },
       "review": null
     },
     {
@@ -260305,7 +261327,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.42）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260318,6 +261340,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.42
+      },
       "review": null
     },
     {
@@ -260335,7 +261364,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.44）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260348,6 +261377,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.44
+      },
       "review": null
     },
     {
@@ -260365,7 +261401,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.41）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260378,6 +261414,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.41
+      },
       "review": null
     },
     {
@@ -260395,7 +261438,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 0.99、一覧 0.41）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260408,6 +261451,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.41
+      },
       "review": null
     },
     {
@@ -260425,7 +261475,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.615,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。XLSX。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2019-01-22。jev: library（確信度 1.00、一覧 0.34）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.6,
@@ -260438,6 +261488,13 @@
       "lastModified": "2019-01-22T15:00:00",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.34
+      },
       "review": null
     },
     {
@@ -260575,7 +261632,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.61,
-      "reason": "説明・タグのみに「図書館」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-11-28",
+      "reason": "説明・タグのみに「図書館」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2025-11-28。jev: mixed（確信度 0.43、一覧 0.70）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -260588,6 +261645,13 @@
       "lastModified": "2025-11-28T02:16:43.404774",
       "updateFrequency": "",
       "duplicateOf": null,
+      "semantic": {
+        "category": "mixed",
+        "confidence": 0.43,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.7
+      },
       "review": null
     },
     {
@@ -260902,10 +261966,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.6,
-      "reason": "タイトルに「図書館」「リスト」を含む。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-25",
+      "reason": "タイトルに「図書館」「リスト」を含む。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-25。jev: library（確信度 0.73、一覧 0.10） → 不採用",
       "signals": {
         "semantic": 1.0,
         "format": 0.8,
@@ -260933,6 +261997,13 @@
       "lastModified": "2021-02-25T21:21:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.73,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.1
+      },
       "review": null
     },
     {
@@ -261337,10 +262408,10 @@
       "datastoreActive": true,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.595,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2026-06-07",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。DataStore(API) 対応 CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2026-06-07。jev: library（確信度 0.96、一覧 0.16） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 1.0,
@@ -261383,6 +262454,13 @@
       "lastModified": "2026-06-07T15:00:00",
       "updateFrequency": "毎年",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.96,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.16
+      },
       "review": null
     },
     {
@@ -261640,7 +262718,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.57,
-      "reason": "説明・タグのみに「図書館」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2022-06-29",
+      "reason": "説明・タグのみに「図書館」を含む。CSV。位置情報は未検査（取得失敗または非対応形式）。CC-BY-4.0。更新 2022-06-29。jev: publicFacility（確信度 0.49、一覧 0.69）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.4,
         "format": 0.8,
@@ -261653,6 +262731,13 @@
       "lastModified": "2022-06-29T00:28:34",
       "updateFrequency": "1年",
       "duplicateOf": null,
+      "semantic": {
+        "category": "publicFacility",
+        "confidence": 0.49,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.69
+      },
       "review": null
     },
     {
@@ -261967,10 +263052,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12。jev: library（確信度 1.00、一覧 0.16） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -261998,6 +263083,13 @@
       "lastModified": "2025-12-12T07:32:33.997596",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.16
+      },
       "review": null
     },
     {
@@ -262012,10 +263104,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12。jev: library（確信度 1.00、一覧 0.16） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262045,6 +263137,13 @@
       "lastModified": "2025-12-12T07:32:35.169339",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.16
+      },
       "review": null
     },
     {
@@ -262059,10 +263158,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12。jev: library（確信度 1.00、一覧 0.15） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262092,6 +263191,13 @@
       "lastModified": "2025-12-12T07:32:36.307903",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.15
+      },
       "review": null
     },
     {
@@ -262106,10 +263212,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12。jev: library（確信度 0.99、一覧 0.17） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262137,6 +263243,13 @@
       "lastModified": "2025-12-12T07:32:37.439068",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.17
+      },
       "review": null
     },
     {
@@ -262151,10 +263264,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12。jev: library（確信度 1.00、一覧 0.11） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262180,6 +263293,13 @@
       "lastModified": "2025-12-12T07:32:38.443642",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.11
+      },
       "review": null
     },
     {
@@ -262194,10 +263314,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12。jev: library（確信度 1.00、一覧 0.16） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262227,6 +263347,13 @@
       "lastModified": "2025-12-12T07:32:39.440603",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.16
+      },
       "review": null
     },
     {
@@ -262241,10 +263368,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-12-12。jev: library（確信度 1.00、一覧 0.17） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262274,6 +263401,13 @@
       "lastModified": "2025-12-12T07:32:41.476336",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.17
+      },
       "review": null
     },
     {
@@ -262288,10 +263422,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2024-10-31",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2024-10-31。jev: library（確信度 0.96、一覧 0.11） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262419,6 +263553,13 @@
       "lastModified": "2024-10-31T01:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.96,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.11
+      },
       "review": null
     },
     {
@@ -262433,10 +263574,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2024-10-31",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2024-10-31。jev: library（確信度 0.97、一覧 0.12） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262566,6 +263707,13 @@
       "lastModified": "2024-10-31T01:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.97,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.12
+      },
       "review": null
     },
     {
@@ -262580,10 +263728,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2024-10-31",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2024-10-31。jev: library（確信度 0.96、一覧 0.12） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262713,6 +263861,13 @@
       "lastModified": "2024-10-31T01:00:00",
       "updateFrequency": "1年ごと",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.96,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.12
+      },
       "review": null
     },
     {
@@ -262727,10 +263882,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-09-30",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-09-30。jev: library（確信度 0.93、一覧 0.05） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262855,6 +264010,13 @@
       "lastModified": "2025-09-30T15:00:00",
       "updateFrequency": "更新無",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.93,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.05
+      },
       "review": null
     },
     {
@@ -262872,7 +264034,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-01-27",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-01-27。jev: library（確信度 0.69、一覧 0.03）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262903,6 +264065,13 @@
       "lastModified": "2025-01-27T02:25:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.69,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -262917,10 +264086,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-01-29",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-01-29。jev: library（確信度 0.95、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -262958,6 +264127,13 @@
       "lastModified": "2025-01-29T07:04:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.95,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -262975,7 +264151,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.565,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-01-29",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2025-01-29。jev: library（確信度 1.00、一覧 0.52）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263030,6 +264206,13 @@
       "lastModified": "2025-01-29T07:03:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.52
+      },
       "review": null
     },
     {
@@ -263044,10 +264227,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-08",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-08。jev: none（確信度 1.00、一覧 0.13） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263077,6 +264260,13 @@
       "lastModified": "2022-03-08T04:07:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.13
+      },
       "review": null
     },
     {
@@ -263094,7 +264284,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.525,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標充足率 0%（緯度・経度）。座標・住所とも値がない。CC-BY-4.0。更新 2024-03-28",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標充足率 0%（緯度・経度）。座標・住所とも値がない。CC-BY-4.0。更新 2024-03-28。jev: library（確信度 1.00、一覧 0.82）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263201,6 +264391,13 @@
       "lastModified": "2024-03-28T15:00:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.82
+      },
       "review": null
     },
     {
@@ -263215,10 +264412,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2022-03-31。jev: library（確信度 0.80、一覧 0.08） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263298,6 +264495,13 @@
       "lastModified": "2022-03-31T15:00:00",
       "updateFrequency": "年1回(4月）",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.8,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.08
+      },
       "review": null
     },
     {
@@ -263315,7 +264519,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.525,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-12-13",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-12-13。jev: library（確信度 0.69、一覧 0.03）。判断が分かれるため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263346,6 +264550,13 @@
       "lastModified": "2023-12-13T00:46:00",
       "updateFrequency": "年１回",
       "duplicateOf": "t132195d0000000241",
+      "semantic": {
+        "category": "library",
+        "confidence": 0.69,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -263360,10 +264571,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": false,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.525,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-12-13",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-12-13。jev: library（確信度 0.95、一覧 0.06） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263400,7 +264611,14 @@
       "license": "CC-BY-4.0",
       "lastModified": "2023-12-13T01:23:00",
       "updateFrequency": "年１回",
-      "duplicateOf": "t132195d0000000243",
+      "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.95,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.06
+      },
       "review": null
     },
     {
@@ -263418,7 +264636,7 @@
       "status": "review",
       "autoStatus": "review",
       "confidence": 0.525,
-      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-12-13",
+      "reason": "タイトルに「図書館」を含む（一覧を示す語なし）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2023-12-13。jev: library（確信度 1.00、一覧 0.50）。位置情報が不足のため要確認のまま",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263473,6 +264691,13 @@
       "lastModified": "2023-12-13T01:21:00",
       "updateFrequency": "年１回",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.5
+      },
       "review": null
     },
     {
@@ -263487,10 +264712,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27。jev: none（確信度 0.98、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263542,6 +264767,13 @@
       "lastModified": "2021-02-27T02:39:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -263556,10 +264788,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-01-22",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-01-22。jev: library（確信度 0.98、一覧 0.09） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263585,6 +264817,13 @@
       "lastModified": "2021-01-22T08:21:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "library",
+        "confidence": 0.98,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.09
+      },
       "review": null
     },
     {
@@ -263599,10 +264838,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27。jev: none（確信度 0.99、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263630,6 +264869,13 @@
       "lastModified": "2021-02-27T02:39:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.99,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -263644,10 +264890,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-03-08",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-03-08。jev: none（確信度 1.00、一覧 0.02） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263674,6 +264920,13 @@
       "lastModified": "2021-03-08T06:22:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.02
+      },
       "review": null
     },
     {
@@ -263688,10 +264941,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27。jev: none（確信度 1.00、一覧 0.02） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263719,6 +264972,13 @@
       "lastModified": "2021-02-27T02:39:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.02
+      },
       "review": null
     },
     {
@@ -263733,10 +264993,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27。jev: none（確信度 0.89、一覧 0.05） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263765,6 +265025,13 @@
       "lastModified": "2021-02-27T02:39:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.89,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.05
+      },
       "review": null
     },
     {
@@ -263779,10 +265046,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27。jev: none（確信度 1.00、一覧 0.05） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263810,6 +265077,13 @@
       "lastModified": "2021-02-27T02:39:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.05
+      },
       "review": null
     },
     {
@@ -263824,10 +265098,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27。jev: none（確信度 1.00、一覧 0.03） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263854,6 +265128,13 @@
       "lastModified": "2021-02-27T02:39:00",
       "updateFrequency": "随時",
       "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 1.0,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.03
+      },
       "review": null
     },
     {
@@ -263868,10 +265149,10 @@
       "datastoreActive": false,
       "locationSource": null,
       "rowFilter": true,
-      "status": "review",
-      "autoStatus": "review",
+      "status": "rejected",
+      "autoStatus": "rejected",
       "confidence": 0.495,
-      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27",
+      "reason": "リソース名に「図書館」を含む（カテゴリ別ファイル）。CSV。座標列・住所列が見つからない。CC-BY-4.0。更新 2021-02-27。jev: none（確信度 0.96、一覧 0.04） → 不採用",
       "signals": {
         "semantic": 0.7,
         "format": 0.8,
@@ -263922,7 +265203,14 @@
       "license": "CC-BY-4.0",
       "lastModified": "2021-02-27T02:39:00",
       "updateFrequency": "随時",
-      "duplicateOf": "t000021d2000000026",
+      "duplicateOf": null,
+      "semantic": {
+        "category": "none",
+        "confidence": 0.96,
+        "classifier": "jev",
+        "model": "jev-1.13.0",
+        "listScore": 0.04
+      },
       "review": null
     },
     {

@@ -2,7 +2,7 @@
   "feature": "tourism",
   "radiusMeters": 500,
   "crs": "EPSG:6677",
-  "generatedAt": "2026-09-28T02:05:45Z",
+  "generatedAt": "2026-09-28T10:04:02Z",
   "municipalitySampling": "center + 8 @ r/2 + 16 @ r (GSI reverse geocoder)",
   "unlocatedTolerance": 0.05,
   "stations": [

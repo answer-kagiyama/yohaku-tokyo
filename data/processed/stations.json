@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T02:05:46Z",
+  "generatedAt": "2026-09-28T10:04:03Z",
   "radiusMeters": 500,
   "isFixture": false,
   "fixtureFeatures": [],
@@ -42,7 +42,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 5.9,
+        "culture": 7.1,
         "publicFacility": 17.6,
         "park": 11.9,
         "library": 26.5,
@@ -50,9 +50,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 65.9,
+        "yohaku": 65.5,
         "tourismLow": null,
-        "cultureLow": 94.1,
+        "cultureLow": 92.9,
         "publicFacilityLow": 82.4,
         "parkLow": 88.1,
         "libraryLow": 73.5,
@@ -69,9 +69,9 @@
       },
       "ranking": {
         "rank": 5,
-        "of": 20,
+        "of": 19,
         "range": [
-          2,
+          3,
           7
         ]
       },
@@ -388,7 +388,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 73.5,
+        "culture": 71.4,
         "publicFacility": 17.6,
         "park": 28.6,
         "library": 26.5,
@@ -396,9 +396,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 53.0,
+        "yohaku": 53.5,
         "tourismLow": null,
-        "cultureLow": 26.5,
+        "cultureLow": 28.6,
         "publicFacilityLow": 82.4,
         "parkLow": 71.4,
         "libraryLow": 73.5,
@@ -415,7 +415,7 @@
       },
       "ranking": {
         "rank": 8,
-        "of": 20,
+        "of": 19,
         "range": [
           7,
           9
@@ -751,7 +751,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 38.2,
+        "culture": 35.7,
         "publicFacility": 55.9,
         "park": 28.6,
         "library": 61.8,
@@ -759,9 +759,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 44.5,
+        "yohaku": 45.2,
         "tourismLow": null,
-        "cultureLow": 61.8,
+        "cultureLow": 64.3,
         "publicFacilityLow": 44.1,
         "parkLow": 71.4,
         "libraryLow": 38.2,
@@ -778,10 +778,10 @@
       },
       "ranking": {
         "rank": 11,
-        "of": 20,
+        "of": 19,
         "range": [
           9,
-          14
+          13
         ]
       },
       "sources": [
@@ -1191,25 +1191,25 @@
         "tourism": null,
         "culture": 6,
         "publicFacility": 0,
-        "park": 8,
+        "park": 9,
         "library": 0,
         "stationUsage": 133901
       },
       "normalized": {
         "tourism": null,
-        "culture": 91.2,
+        "culture": 89.3,
         "publicFacility": 17.6,
-        "park": 85.7,
+        "park": 88.1,
         "library": 26.5,
         "stationUsage": 44.8
       },
       "semantic": {},
       "scores": {
-        "yohaku": 45.3,
+        "yohaku": 45.4,
         "tourismLow": null,
-        "cultureLow": 8.8,
+        "cultureLow": 10.7,
         "publicFacilityLow": 82.4,
-        "parkLow": 14.3,
+        "parkLow": 11.9,
         "libraryLow": 73.5,
         "stationUsageLow": 55.2,
         "coverage": 0.75
@@ -1224,7 +1224,7 @@
       },
       "ranking": {
         "rank": 10,
-        "of": 20,
+        "of": 19,
         "range": [
           9,
           13
@@ -1292,6 +1292,17 @@
           "license": "CC-BY-4.0",
           "features": [
             "publicFacility"
+          ],
+          "kind": "opendata"
+        },
+        {
+          "id": "t000029d0000000003",
+          "name": "東京都デジタルサービス局 宿泊施設等の施設情報ポータルサイト「だれでも東京」",
+          "organization": "東京都デジタルサービス局",
+          "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t000029d0000000003",
+          "license": "CC-BY-4.0",
+          "features": [
+            "park"
           ],
           "kind": "opendata"
         },
@@ -1475,8 +1486,8 @@
           "kind": "facilities",
           "status": "complete",
           "radiusMeters": 500,
-          "count": 8,
-          "lowerBound": 8,
+          "count": 9,
+          "lowerBound": 9,
           "municipalities": [
             {
               "code": "13102",
@@ -1492,6 +1503,11 @@
             }
           ],
           "facilities": [
+            {
+              "name": "旧芝離宮恩賜庭園",
+              "distanceM": 93.9,
+              "coordSource": "source"
+            },
             {
               "name": "浜松町二丁目緑地",
               "distanceM": 195.6,
@@ -1592,7 +1608,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 55.9,
+        "culture": 53.6,
         "publicFacility": 55.9,
         "park": 64.3,
         "library": 82.4,
@@ -1600,9 +1616,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 43.3,
+        "yohaku": 43.9,
         "tourismLow": null,
-        "cultureLow": 44.1,
+        "cultureLow": 46.4,
         "publicFacilityLow": 44.1,
         "parkLow": 35.7,
         "libraryLow": 17.6,
@@ -1619,7 +1635,7 @@
       },
       "ranking": {
         "rank": 13,
-        "of": 20,
+        "of": 19,
         "range": [
           10,
           13
@@ -1889,7 +1905,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 73.5,
+        "culture": 71.4,
         "publicFacility": 17.6,
         "park": 42.9,
         "library": 26.5,
@@ -1897,9 +1913,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 67.6,
+        "yohaku": 68.2,
         "tourismLow": null,
-        "cultureLow": 26.5,
+        "cultureLow": 28.6,
         "publicFacilityLow": 82.4,
         "parkLow": 57.1,
         "libraryLow": 73.5,
@@ -1916,9 +1932,9 @@
       },
       "ranking": {
         "rank": 4,
-        "of": 20,
+        "of": 19,
         "range": [
-          4,
+          3,
           6
         ]
       },
@@ -2482,10 +2498,10 @@
       },
       "ranking": {
         "rank": 14,
-        "of": 20,
+        "of": 19,
         "range": [
-          13,
-          17
+          12,
+          16
         ]
       },
       "sources": [
@@ -2759,17 +2775,17 @@
         "tourism": 66.7,
         "culture": null,
         "publicFacility": null,
-        "park": 90.5,
+        "park": 88.1,
         "library": null,
         "stationUsage": 58.6
       },
       "semantic": {},
       "scores": {
-        "yohaku": 31.9,
+        "yohaku": 32.4,
         "tourismLow": 33.3,
         "cultureLow": null,
         "publicFacilityLow": null,
-        "parkLow": 9.5,
+        "parkLow": 11.9,
         "libraryLow": null,
         "stationUsageLow": 41.4,
         "coverage": 0.55
@@ -2783,11 +2799,11 @@
         "stationUsageLow": 0.3636
       },
       "ranking": {
-        "rank": 19,
-        "of": 20,
+        "rank": 17,
+        "of": 19,
         "range": [
-          17,
-          19
+          16,
+          17
         ]
       },
       "sources": [
@@ -4929,7 +4945,7 @@
       },
       "normalized": {
         "tourism": 11.1,
-        "culture": 38.2,
+        "culture": 35.7,
         "publicFacility": 17.6,
         "park": 78.6,
         "library": 26.5,
@@ -4937,9 +4953,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 73.7,
+        "yohaku": 74.2,
         "tourismLow": 88.9,
-        "cultureLow": 61.8,
+        "cultureLow": 64.3,
         "publicFacilityLow": 82.4,
         "parkLow": 21.4,
         "libraryLow": 73.5,
@@ -4955,11 +4971,11 @@
         "stationUsageLow": 0.2
       },
       "ranking": {
-        "rank": 2,
-        "of": 20,
+        "rank": 3,
+        "of": 19,
         "range": [
           2,
-          3
+          4
         ]
       },
       "sources": [
@@ -5200,7 +5216,7 @@
       },
       "normalized": {
         "tourism": 11.1,
-        "culture": 5.9,
+        "culture": 7.1,
         "publicFacility": 55.9,
         "park": null,
         "library": null,
@@ -5208,9 +5224,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 64.8,
+        "yohaku": 64.5,
         "tourismLow": 88.9,
-        "cultureLow": 94.1,
+        "cultureLow": 92.9,
         "publicFacilityLow": 44.1,
         "parkLow": null,
         "libraryLow": null,
@@ -5227,7 +5243,7 @@
       },
       "ranking": {
         "rank": 6,
-        "of": 20,
+        "of": 19,
         "range": [
           4,
           7
@@ -5575,7 +5591,7 @@
       },
       "normalized": {
         "tourism": 33.3,
-        "culture": 73.5,
+        "culture": 71.4,
         "publicFacility": 55.9,
         "park": null,
         "library": null,
@@ -5583,9 +5599,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 59.0,
+        "yohaku": 59.5,
         "tourismLow": 66.7,
-        "cultureLow": 26.5,
+        "cultureLow": 28.6,
         "publicFacilityLow": 44.1,
         "parkLow": null,
         "libraryLow": null,
@@ -5602,7 +5618,7 @@
       },
       "ranking": {
         "rank": 7,
-        "of": 20,
+        "of": 19,
         "range": [
           5,
           8
@@ -5936,7 +5952,7 @@
       },
       "normalized": {
         "tourism": 55.6,
-        "culture": 20.6,
+        "culture": 21.4,
         "publicFacility": 85.3,
         "park": null,
         "library": null,
@@ -5944,9 +5960,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 38.2,
+        "yohaku": 38.0,
         "tourismLow": 44.4,
-        "cultureLow": 79.4,
+        "cultureLow": 78.6,
         "publicFacilityLow": 14.7,
         "parkLow": null,
         "libraryLow": null,
@@ -5963,7 +5979,7 @@
       },
       "ranking": {
         "rank": 15,
-        "of": 20,
+        "of": 19,
         "range": [
           12,
           17
@@ -6221,7 +6237,7 @@
       },
       "normalized": {
         "tourism": 11.1,
-        "culture": 5.9,
+        "culture": 7.1,
         "publicFacility": 17.6,
         "park": null,
         "library": null,
@@ -6229,9 +6245,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 87.5,
+        "yohaku": 87.2,
         "tourismLow": 88.9,
-        "cultureLow": 94.1,
+        "cultureLow": 92.9,
         "publicFacilityLow": 82.4,
         "parkLow": null,
         "libraryLow": null,
@@ -6248,7 +6264,7 @@
       },
       "ranking": {
         "rank": 1,
-        "of": 20,
+        "of": 19,
         "range": [
           1,
           1
@@ -6430,7 +6446,7 @@
       ],
       "raw": {
         "tourism": null,
-        "culture": 4,
+        "culture": null,
         "publicFacility": 2,
         "park": null,
         "library": null,
@@ -6438,7 +6454,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 73.5,
+        "culture": null,
         "publicFacility": 85.3,
         "park": null,
         "library": null,
@@ -6446,31 +6462,24 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 37.5,
+        "yohaku": null,
         "tourismLow": null,
-        "cultureLow": 26.5,
+        "cultureLow": null,
         "publicFacilityLow": 14.7,
         "parkLow": null,
         "libraryLow": null,
         "stationUsageLow": 65.5,
-        "coverage": 0.55
+        "coverage": 0.35
       },
       "effectiveWeights": {
         "tourismLow": null,
-        "cultureLow": 0.3636,
-        "publicFacilityLow": 0.2727,
+        "cultureLow": null,
+        "publicFacilityLow": 0.4286,
         "parkLow": null,
         "libraryLow": null,
-        "stationUsageLow": 0.3636
+        "stationUsageLow": 0.5714
       },
-      "ranking": {
-        "rank": 16,
-        "of": 20,
-        "range": [
-          13,
-          18
-        ]
-      },
+      "ranking": null,
       "sources": [
         {
           "id": "mlit-n02",
@@ -6489,17 +6498,6 @@
           "license": "CC-BY-4.0",
           "features": [
             "tourism"
-          ],
-          "kind": "opendata"
-        },
-        {
-          "id": "t131059d0304010001",
-          "name": "文京区 文化・スポーツ施設",
-          "organization": "文京区",
-          "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131059d0304010001",
-          "license": "CC-BY-4.0",
-          "features": [
-            "culture"
           ],
           "kind": "opendata"
         },
@@ -6628,15 +6626,15 @@
         },
         "culture": {
           "kind": "facilities",
-          "status": "complete",
+          "status": "incomplete",
           "radiusMeters": 500,
-          "count": 4,
+          "count": null,
           "lowerBound": 4,
           "municipalities": [
             {
               "code": "13105",
               "name": "文京区",
-              "coverage": "covered",
+              "coverage": "uncovered",
               "unlocated": 0
             },
             {
@@ -6842,17 +6840,6 @@
           "kind": "opendata"
         },
         {
-          "id": "t131059d0304010001",
-          "name": "文京区 文化・スポーツ施設",
-          "organization": "文京区",
-          "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131059d0304010001",
-          "license": "CC-BY-4.0",
-          "features": [
-            "culture"
-          ],
-          "kind": "opendata"
-        },
-        {
           "id": "t131164d0000000007",
           "name": "豊島区 文化財一覧（国もしくは地方公共団体が指定、登録、選定等行った文化財の一覧）",
           "organization": "豊島区",
@@ -6882,6 +6869,17 @@
           "license": "CC-BY-4.0",
           "features": [
             "publicFacility"
+          ],
+          "kind": "opendata"
+        },
+        {
+          "id": "t000029d0000000003",
+          "name": "東京都デジタルサービス局 宿泊施設等の施設情報ポータルサイト「だれでも東京」",
+          "organization": "東京都デジタルサービス局",
+          "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t000029d0000000003",
+          "license": "CC-BY-4.0",
+          "features": [
+            "park"
           ],
           "kind": "opendata"
         },
@@ -7002,7 +7000,7 @@
             {
               "code": "13105",
               "name": "文京区",
-              "coverage": "covered",
+              "coverage": "uncovered",
               "unlocated": 0
             },
             {
@@ -7080,7 +7078,7 @@
           "status": "incomplete",
           "radiusMeters": 500,
           "count": null,
-          "lowerBound": 1,
+          "lowerBound": 2,
           "municipalities": [
             {
               "code": "13105",
@@ -7105,6 +7103,11 @@
             {
               "name": "神明北公園",
               "distanceM": 392.8,
+              "coordSource": "source"
+            },
+            {
+              "name": "六義園",
+              "distanceM": 477.6,
               "coordSource": "source"
             }
           ]
@@ -7540,17 +7543,6 @@
           "kind": "opendata"
         },
         {
-          "id": "t131059d0304010001",
-          "name": "文京区 文化・スポーツ施設",
-          "organization": "文京区",
-          "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131059d0304010001",
-          "license": "CC-BY-4.0",
-          "features": [
-            "culture"
-          ],
-          "kind": "opendata"
-        },
-        {
           "id": "t131067d0000000393",
           "name": "台東区 文化財一覧",
           "organization": "台東区",
@@ -7807,7 +7799,7 @@
             {
               "code": "13105",
               "name": "文京区",
-              "coverage": "covered",
+              "coverage": "uncovered",
               "unlocated": 0
             },
             {
@@ -8090,11 +8082,11 @@
         "stationUsageLow": 0.2
       },
       "ranking": {
-        "rank": 20,
-        "of": 20,
+        "rank": 18,
+        "of": 19,
         "range": [
-          18,
-          20
+          16,
+          18
         ]
       },
       "sources": [
@@ -8585,7 +8577,7 @@
       },
       "normalized": {
         "tourism": 94.4,
-        "culture": 91.2,
+        "culture": 89.3,
         "publicFacility": 55.9,
         "park": 28.6,
         "library": 26.5,
@@ -8593,9 +8585,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 43.6,
+        "yohaku": 44.0,
         "tourismLow": 5.6,
-        "cultureLow": 8.8,
+        "cultureLow": 10.7,
         "publicFacilityLow": 44.1,
         "parkLow": 71.4,
         "libraryLow": 73.5,
@@ -8612,9 +8604,9 @@
       },
       "ranking": {
         "rank": 12,
-        "of": 20,
+        "of": 19,
         "range": [
-          9,
+          10,
           15
         ]
       },
@@ -9043,7 +9035,7 @@
       },
       "normalized": {
         "tourism": 77.8,
-        "culture": 55.9,
+        "culture": 53.6,
         "publicFacility": 85.3,
         "park": 11.9,
         "library": 61.8,
@@ -9051,9 +9043,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 35.4,
+        "yohaku": 35.9,
         "tourismLow": 22.2,
-        "cultureLow": 44.1,
+        "cultureLow": 46.4,
         "publicFacilityLow": 14.7,
         "parkLow": 88.1,
         "libraryLow": 38.2,
@@ -9069,11 +9061,11 @@
         "stationUsageLow": 0.2
       },
       "ranking": {
-        "rank": 17,
-        "of": 20,
+        "rank": 16,
+        "of": 19,
         "range": [
-          15,
-          19
+          14,
+          17
         ]
       },
       "sources": [
@@ -9407,7 +9399,7 @@
       ],
       "raw": {
         "tourism": null,
-        "culture": 2,
+        "culture": null,
         "publicFacility": 0,
         "park": 2,
         "library": 0,
@@ -9415,7 +9407,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 38.2,
+        "culture": null,
         "publicFacility": 17.6,
         "park": 28.6,
         "library": 26.5,
@@ -9423,29 +9415,29 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 72.5,
+        "yohaku": 76.4,
         "tourismLow": null,
-        "cultureLow": 61.8,
+        "cultureLow": null,
         "publicFacilityLow": 82.4,
         "parkLow": 71.4,
         "libraryLow": 73.5,
         "stationUsageLow": 75.9,
-        "coverage": 0.75
+        "coverage": 0.55
       },
       "effectiveWeights": {
         "tourismLow": null,
-        "cultureLow": 0.2667,
-        "publicFacilityLow": 0.2,
-        "parkLow": 0.1333,
-        "libraryLow": 0.1333,
-        "stationUsageLow": 0.2667
+        "cultureLow": null,
+        "publicFacilityLow": 0.2727,
+        "parkLow": 0.1818,
+        "libraryLow": 0.1818,
+        "stationUsageLow": 0.3636
       },
       "ranking": {
-        "rank": 3,
-        "of": 20,
+        "rank": 2,
+        "of": 19,
         "range": [
           2,
-          4
+          3
         ]
       },
       "sources": [
@@ -9496,17 +9488,6 @@
           "name": "千代田区 文化財一覧",
           "organization": "千代田区",
           "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131016d0000000002",
-          "license": "CC-BY-4.0",
-          "features": [
-            "culture"
-          ],
-          "kind": "opendata"
-        },
-        {
-          "id": "t131059d0304010001",
-          "name": "文京区 文化・スポーツ施設",
-          "organization": "文京区",
-          "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131059d0304010001",
           "license": "CC-BY-4.0",
           "features": [
             "culture"
@@ -9715,9 +9696,9 @@
         },
         "culture": {
           "kind": "facilities",
-          "status": "complete",
+          "status": "incomplete",
           "radiusMeters": 500,
-          "count": 2,
+          "count": null,
           "lowerBound": 2,
           "municipalities": [
             {
@@ -9729,7 +9710,7 @@
             {
               "code": "13105",
               "name": "文京区",
-              "coverage": "covered",
+              "coverage": "uncovered",
               "unlocated": 0
             },
             {
@@ -9878,7 +9859,7 @@
       ],
       "raw": {
         "tourism": null,
-        "culture": 1,
+        "culture": null,
         "publicFacility": 6,
         "park": 6,
         "library": 2,
@@ -9886,7 +9867,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 20.6,
+        "culture": null,
         "publicFacility": 100.0,
         "park": 78.6,
         "library": 82.4,
@@ -9894,28 +9875,28 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 32.8,
+        "yohaku": 15.9,
         "tourismLow": null,
-        "cultureLow": 79.4,
+        "cultureLow": null,
         "publicFacilityLow": 0.0,
         "parkLow": 21.4,
         "libraryLow": 17.6,
         "stationUsageLow": 24.1,
-        "coverage": 0.75
+        "coverage": 0.55
       },
       "effectiveWeights": {
         "tourismLow": null,
-        "cultureLow": 0.2667,
-        "publicFacilityLow": 0.2,
-        "parkLow": 0.1333,
-        "libraryLow": 0.1333,
-        "stationUsageLow": 0.2667
+        "cultureLow": null,
+        "publicFacilityLow": 0.2727,
+        "parkLow": 0.1818,
+        "libraryLow": 0.1818,
+        "stationUsageLow": 0.3636
       },
       "ranking": {
-        "rank": 18,
-        "of": 20,
+        "rank": 19,
+        "of": 19,
         "range": [
-          16,
+          17,
           19
         ]
       },
@@ -9956,17 +9937,6 @@
           "name": "千代田区 文化財一覧",
           "organization": "千代田区",
           "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131016d0000000002",
-          "license": "CC-BY-4.0",
-          "features": [
-            "culture"
-          ],
-          "kind": "opendata"
-        },
-        {
-          "id": "t131059d0304010001",
-          "name": "文京区 文化・スポーツ施設",
-          "organization": "文京区",
-          "url": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131059d0304010001",
           "license": "CC-BY-4.0",
           "features": [
             "culture"
@@ -10170,9 +10140,9 @@
         },
         "culture": {
           "kind": "facilities",
-          "status": "complete",
+          "status": "incomplete",
           "radiusMeters": 500,
-          "count": 1,
+          "count": null,
           "lowerBound": 1,
           "municipalities": [
             {
@@ -10184,7 +10154,7 @@
             {
               "code": "13105",
               "name": "文京区",
-              "coverage": "covered",
+              "coverage": "uncovered",
               "unlocated": 0
             },
             {
@@ -10407,7 +10377,7 @@
       },
       "normalized": {
         "tourism": null,
-        "culture": 38.2,
+        "culture": 35.7,
         "publicFacility": 55.9,
         "park": 64.3,
         "library": 82.4,
@@ -10415,9 +10385,9 @@
       },
       "semantic": {},
       "scores": {
-        "yohaku": 49.0,
+        "yohaku": 49.6,
         "tourismLow": null,
-        "cultureLow": 61.8,
+        "cultureLow": 64.3,
         "publicFacilityLow": 44.1,
         "parkLow": 35.7,
         "libraryLow": 17.6,
@@ -10434,7 +10404,7 @@
       },
       "ranking": {
         "rank": 9,
-        "of": 20,
+        "of": 19,
         "range": [
           8,
           11

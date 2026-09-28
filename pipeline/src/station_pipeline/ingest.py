@@ -9,6 +9,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from .classify import FacilityDescriptor, JevError, SemanticClassifier
 from .fetch.download import fetch_resource
 from .geo.geocode import Geocoder, is_outside_tokyo
 from .http import HttpClient, HttpError
@@ -20,6 +21,24 @@ log = logging.getLogger(__name__)
 DEGRADED_BELOW = 0.5
 # "千代田図書館分室" is a library; "神田公園出張所" (a 神田公園-district office) is not a park.
 _NAME_SUFFIXES = ("", "分館", "分室", "本館")
+
+
+def classify_rows(
+    rows: list[dict[str, Any]],
+    entry: dict[str, Any],
+    classifier: SemanticClassifier,
+    feature: str,
+    min_confidence: float,
+) -> list[dict[str, Any]]:
+    source = f"{entry.get('organization') or ''} {entry['name']}".strip()
+    judgements = classifier.judge_facilities(
+        [FacilityDescriptor(f["name"], list(f["categories"]), source) for f in rows]
+    )
+    kept = []
+    for f, j in zip(rows, judgements, strict=True):
+        if j.category == feature and j.confidence >= min_confidence:
+            kept.append({**f, "semantic": j.to_dict()})
+    return kept
 
 
 def matches_feature(
@@ -79,6 +98,8 @@ def ingest_feature(
     same_place_m: float | None = None,
     include_names: tuple[str, ...] = (),
     feature_keywords: tuple[str, ...] = (),
+    classifier: SemanticClassifier | None = None,
+    facility_min_confidence: float = 0.5,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     entries = [
         e for e in manifest["datasets"] if e["feature"] == feature and e["status"] == "accepted"
@@ -101,15 +122,32 @@ def ingest_feature(
             total_rows = len(rows)
             # Not a destination for this feature: counted by another feature (a library in a
             # public facility list), not open to the public (※非公開), or not a place (無形).
+            # 1) Hard rules first: explicit words the classifier tends to miss (spec 0009 §6).
             rows = [
                 f
                 for f in rows
                 if not is_excluded_name(f["name"], exclude_names)
                 and not any(m in f["name"] for m in exclude_markers)
                 and not any(w in c for c in f["categories"] for w in exclude_categories)
-                and (not include_names or any(w in f["name"] for w in include_names))
-                and (not e.get("rowFilter") or matches_feature(f, feature_keywords, include_names))
             ]
+            # 2) Mixed lists: the classifier decides the category when available.
+            classified_by = "rule"
+            if e.get("rowFilter") and classifier is not None:
+                try:
+                    rows = classify_rows(rows, e, classifier, feature, facility_min_confidence)
+                    classified_by = classifier.name
+                except JevError as exc:
+                    log.warning("classifier failed for %s, using rules: %s", e["datasetId"], exc)
+            if classified_by == "rule":
+                rows = [
+                    f
+                    for f in rows
+                    if (not include_names or any(w in f["name"] for w in include_names))
+                    and (
+                        not e.get("rowFilter")
+                        or matches_feature(f, feature_keywords, include_names)
+                    )
+                ]
         except (HttpError, TabularError, NormalizeError) as exc:
             # A failed dataset is missing data, never "zero facilities".
             report.update(status="failed", error=str(exc))
@@ -124,7 +162,11 @@ def ingest_feature(
         out_of_scope = sum(1 for f in rows if f.get("unlocatedReason") == "out-of-geocode-scope")
         outside = sum(1 for f in rows if f.get("unlocatedReason") == "outside-tokyo")
         in_scope = len(rows) - out_of_scope - outside
-        if rows and in_scope == 0 and located == 0:
+        if e.get("rowFilter") and not rows:
+            # A mixed list with no row of this feature says nothing about the feature: it must
+            # not make the municipality "covered" (0 would then read as a real zero).
+            status = "no-matching-rows"
+        elif rows and in_scope == 0 and located == 0:
             status = "out-of-scope"  # deliberately not geocoded yet (pipeline.yaml geocode.scope)
         elif in_scope and located / in_scope < DEGRADED_BELOW:
             status = "degraded"
@@ -137,6 +179,7 @@ def ingest_feature(
             retrievedAt=raw.retrievedAt,
             rows=len(rows),
             excluded=total_rows - len(rows),
+            classifiedBy=classified_by,
             withSourceCoords=with_source,
             geocoded=geocoded,
             geocodedPartial=sum(

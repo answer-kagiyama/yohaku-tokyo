@@ -46,3 +46,4 @@ select = ["E", "F", "I", "B", "UP", "SIM"]
 "tests/test_ridership.py" = ["E501"]
 # Prompt text (Jev instructions / criteria) kept verbatim on one line.
 "scripts/jev_eval.py" = ["E501"]
+"src/station_pipeline/classify/jev.py" = ["E501"]

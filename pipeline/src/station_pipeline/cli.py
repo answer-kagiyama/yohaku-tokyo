@@ -8,6 +8,7 @@ from pathlib import Path
 
 from .aggregate.run import aggregate_feature
 from .build import build_from_fixture
+from .config import FEATURES
 from .discover.catalog import DEFAULT_CATALOG, CkanCatalog
 from .discover.definitions import load_definitions
 from .discover.manifest import (
@@ -45,6 +46,33 @@ AGGREGATES = REPO_ROOT / "data" / "processed" / "aggregates"
 REVERSE_CACHE = REPO_ROOT / "data" / "interim" / "reverse-geocode-cache"
 
 
+SEMANTIC_CACHE = REPO_ROOT / "data" / "processed" / "semantic" / "jev-cache.json"
+
+
+def load_dotenv(path: Path = REPO_ROOT / ".env") -> None:
+    """Minimal .env loader (KEY=VALUE lines). Existing environment variables win."""
+    import os
+
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def make_classifier(settings, definitions):
+    from .classify import load_classifier
+
+    classifier = load_classifier(
+        settings.semantic_classifier, SEMANTIC_CACHE, [k for k in definitions if k in FEATURES]
+    )
+    print(f"[semantic] classifier: {classifier.name if classifier else 'rules only'}")
+    return classifier
+
+
 def station_base() -> Path:
     """The station master when built (make data), else the 5-station fixture."""
     return MASTER if MASTER.exists() else FIXTURE
@@ -64,13 +92,23 @@ def cmd_discover(features: list[str] | None, refresh: bool) -> None:
     client = JsonClient(cache_dir=CATALOG_CACHE, refresh=refresh)
     catalog = CkanCatalog(client, DEFAULT_CATALOG)
     overrides = load_overrides(OVERRIDES)
+    settings = load_settings(SETTINGS)
+    classifier = make_classifier(settings, definitions)
     now = datetime.now(UTC)
     manifest = read_manifest(MANIFEST)
 
     for key in targets:
         d = definitions[key]
         print(f"[discover] {key}: keywords={list(d.keywords)}")
-        entries = apply_overrides(discover_feature(catalog, d, now), overrides)
+        found = discover_feature(
+            catalog,
+            d,
+            now,
+            classifier,
+            settings.dataset_min_confidence,
+            settings.dataset_min_list_score,
+        )
+        entries = apply_overrides(found, overrides)
         meta = {"label": d.label, "keywords": list(d.keywords)}
         manifest = merge_manifest(manifest, key, meta, entries, _now_iso(now), DEFAULT_CATALOG)
         stats = manifest["features"][key]
@@ -82,6 +120,9 @@ def cmd_discover(features: list[str] | None, refresh: bool) -> None:
 
     assert manifest is not None
     write_manifest(manifest, MANIFEST)
+    if classifier is not None:
+        classifier.cache.save()
+        print(f"[semantic] calls: {classifier.calls}, cache hits: {classifier.cache.hits}")
     print(
         f"wrote {MANIFEST.relative_to(REPO_ROOT)} "
         f"(network calls: {client.network_calls}, cache: {CATALOG_CACHE.relative_to(REPO_ROOT)})"
@@ -155,6 +196,7 @@ def cmd_ingest(features: list[str] | None, refresh: bool) -> None:
     targets = features or sorted(k for k in manifest["features"] if k in definitions)
     client = HttpClient(cache_dir=CATALOG_CACHE, refresh=refresh)
     geocoder = GsiGeocoder(HttpClient(cache_dir=GEOCODE_CACHE, refresh=refresh))
+    classifier = make_classifier(settings, definitions)
     now = datetime.now(UTC)
     for key in targets:
         facilities, report = ingest_feature(
@@ -167,6 +209,8 @@ def cmd_ingest(features: list[str] | None, refresh: bool) -> None:
             geocode_scope=resolve_scope(settings),
             dedupe_max_distance_m=settings.dedupe_max_distance_m,
             **feature_filters(definitions.get(key)),
+            classifier=classifier,
+            facility_min_confidence=settings.facility_min_confidence,
         )
         write_json(facilities, INTERIM / key / "facilities.json")
         write_json(report, INTERIM / key / "report.json")
@@ -179,6 +223,9 @@ def cmd_ingest(features: list[str] | None, refresh: bool) -> None:
             f"(geocoder calls: {geocoder.calls})"
         )
         print(f"wrote {(INTERIM / key).relative_to(REPO_ROOT)}/facilities.json, report.json")
+    if classifier is not None:
+        classifier.cache.save()
+        print(f"[semantic] calls: {classifier.calls}, cache hits: {classifier.cache.hits}")
 
 
 def cmd_aggregate(features: list[str] | None, refresh: bool) -> None:
@@ -243,6 +290,7 @@ def load_aggregates() -> dict[str, dict]:
 
 
 def main(argv: list[str] | None = None) -> None:
+    load_dotenv()
     logging.basicConfig(level=logging.WARNING, format="%(levelname)s %(message)s")
     parser = argparse.ArgumentParser(prog="station-pipeline")
     sub = parser.add_subparsers(dest="command", required=True)
