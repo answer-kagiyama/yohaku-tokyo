@@ -16,7 +16,7 @@
 | 8 | Scoring v0.2.0（実効重み・順位・感度）| spec 0006, ADR 0009 | ✅ |
 | 9 | データ台帳 `/data` | spec 0007 | ✅ |
 | 10 | 駅マスタ（N02）・山手線 30 駅 | spec 0008, ADR 0010 | ✅ |
-| 11 | Jev 導入（SemanticClassifier）| ADR 0003 | ⏳ 未着手 |
+| 11 | Jev 導入（SemanticClassifier）| spec 0009, ADR 0003 | 🔍 調査・設計済み。API キー待ち → 日本語での検証から |
 | 12 | 数百駅 | — | ⏳ 未着手 |
 
 テスト: pytest 183 / Vitest 68。`make test` / `make lint` / `make build` が通る状態でコミット済み。
@@ -32,6 +32,8 @@
 | 2026-09-28 | データ不足の駅 | 厳密なまま「判定不能」と表示（基準を緩めない）| spec 0008 §6 |
 | 2026-09-28 | リポジトリ | public。生データ・API キャッシュはコミットしない | README「Data sources」|
 | 2026-09-28 | Web 公開 | Vercel（Root Directory = `apps/web`, Framework = Next.js）| 本ファイル §5 |
+| 2026-09-28 | 作業場所 | 当面はローカルで作業（クラウドエージェント移行は後で）| — |
+| 2026-09-28 | Jev | 仕様・活用方法は Claude が調査・検討。API キーはユーザーが発行 | spec 0009 |
 
 ## 3. 未決の論点（ユーザーに相談する）
 
@@ -48,7 +50,7 @@
 | 高 | CI（GitHub Actions: `make test` / `make lint` / `make build`）| push には `workflow` スコープ付きトークンが必要 |
 | 高 | Playwright E2E（指示書 §25: Home / Explorer / Detail / methodology / source 表示）| 現状は手動スクリーンショットで確認している（§6）|
 | 中 | 「要確認（review）」データセットの人手レビュー | `data/manifests/datasets.json` の `status: review`。採否は `overrides.json` に `<feature>/<datasetId>` で書く |
-| 中 | Step 11: Jev を `SemanticClassifier` として追加 | 現在は RuleBased（`discover/evaluate.py` と `ingest.matches_feature`）。Jev なしで完走すること |
+| 高 | Step 11: Jev の日本語検証（spec 0009 §3）| API キーはユーザーが発行する。評価セットは既存の人手判断から作る。不合格なら導入しない |
 | 中 | 未決論点 1 の方針決定後に特徴量の見直し | `docs/scoring.md`・`config.FEATURES`・`src/domain/features.ts` を同期 |
 | 低 | Step 12: 数百駅 | `pipeline/config/stations.yaml` に駅名を追加するだけで動く設計。負荷対策（論点 2）が先 |
 
