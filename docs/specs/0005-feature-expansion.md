@@ -21,7 +21,7 @@ stationUsage（駅利用）を東京都統計年鑑の駅別表から取得す�
 | 文化財一覧に **※非公開**・**無形文化財**（技術）・同じ寺社の所蔵品が多数 | 非公開・無形を除外し、30m 以内は同じ「場所」として 1 件に数える | `exclude_name_markers`, `exclude_categories`, `same_place_m` |
 | 千代田区の公共施設に**都外（軽井沢）**の施設 | 住所が他県で始まれば `outside-tokyo`。位置不明扱いにしない（どの都内駅の圏内にも入らない）| `geo.geocode.is_outside_tokyo` |
 | 台東区の文化財 190 件中 7 件が住所「東京都台東区」のみ | 位置不明が区全体の 5% 以下なら covered とみなし、件数を evidence に残す（500m 圏は区面積の 1 割未満のため、圏内に入る期待値は通常 1 件未満）| `pipeline.yaml: coverage.unlocated_tolerance` |
-| 文京区は文化財一覧がなく「文化・スポーツ施設」のみ | 人手レビュー（overrides）で culture に採用、スポーツ施設は名前で除外 | `overrides.json: culture/<id>` |
+| 文京区は文化財一覧がなく「文化・スポーツ施設」のみ | エージェントの判断で overrides に culture として採用し、ユーザーがレビューして承認（2026-09-28）、スポーツ施設は名前で除外 | `overrides.json: culture/<id>` |
 
 overrides は `<feature>/<datasetId>` で feature 単位に指定できる（同じデータセットが複数 feature の候補になるため）。
 

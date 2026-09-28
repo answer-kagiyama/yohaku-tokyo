@@ -26,6 +26,9 @@ AI による最終スコア / 紫グラデ・glassmorphism・AI チャット風 
 ## 引き継ぎ
 - 作業の区切りで `docs/status.md` を更新する（完了した Step、ユーザー判断、未決の論点、次のタスク）
 - ユーザーが決めたことは ADR か spec に日付付きで記録する（会話にしか残らない判断を作らない）
+- **エージェントが下した判断はユーザーの判断として書かない**。`overrides.json` には `decidedBy: "agent"` を付け、
+  ユーザーがレビューするまで `docs/status.md` の「レビュー待ち」に載せる。承認後に `reviewedBy` / `reviewedAt` を付ける
+- アプリの画面には判断した主体（Claude / エージェント）を表示しない
 
 ## コマンド
 `make setup | data | dev | test | lint | build`（詳細は README）

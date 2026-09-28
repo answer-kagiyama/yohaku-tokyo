@@ -12,7 +12,7 @@
 {"datasetId": "t131075d0000000132", "name": "文化財一覧", "organization": "墨田区", "columns": ["全国地方公共団体コード", "ID", "地方公共団体名", "名称", "名称_カナ", "名称_通称", "名称_英語", "文化財分類", "種類", "場所名称", "所在地_全国地方公共団体コード", "町字ID", "所在地_連結表記", "所在地_都道府県", "所在地_市区町村"], "label": "culture", "note": "", "rule": "culture"}
 {"datasetId": "t131032d0000000095", "name": "港区文化財一覧", "organization": "港区", "columns": ["全国地方公共団体コード", "ID", "地方公共団体名", "名称", "名称_カナ", "名称_通称", "名称_英語", "文化財分類", "種類", "場所名称", "所在地_全国地方公共団体コード", "町字ID", "所在地_連結表記", "所在地_都道府県", "所在地_市区町村"], "label": "culture", "note": "", "rule": "culture"}
 {"datasetId": "t131148d0000000049", "name": "文化施設", "organization": "中野区", "columns": ["都道府県コード又は市区町村コード", "No", "都道府県名", "市区町村名", "名称", "名称_カナ", "名称_通称", "POIコード", "住所", "方書", "電話番号", "内線番号", "法人番号", "団体名", "利用可能曜日"], "label": "culture", "note": "組織名は後で補完", "rule": "culture"}
-{"datasetId": "t131059d0304010001", "name": "文化・スポーツ施設", "organization": "文京区", "columns": [], "label": "culture", "note": "人手で採用（overrides）。スポーツ施設が混在", "rule": "none"}
+{"datasetId": "t131059d0304010001", "name": "文化・スポーツ施設", "organization": "文京区", "columns": [], "label": "culture", "note": "overrides で採用（エージェント判断・ユーザー承認済み）。スポーツ施設が混在", "rule": "none"}
 {"datasetId": "t131016d3100000005", "name": "公立図書館情報", "organization": "千代田区", "columns": ["全国地方公共団体コード", "ID", "地方公共団体名", "名称", "名称_カナ", "名称_英字", "名称_通称", "POIコード", "外部識別子", "外部識別子の値", "所在地_全国地方公共団体コード", "町字ID", "所在地_連結表記", "所在地_都道府県", "所在地_市区町村"], "label": "library", "note": "", "rule": "library"}
 {"datasetId": "t131024d3100000005", "name": "公立図書館情報", "organization": "中央区", "columns": ["全国地方公共団体コード", "ID", "地方公共団体名", "名称", "名称_カナ", "名称_英字", "名称_通称", "POIコード", "外部識別子", "外部識別子の値", "所在地_全国地方公共団体コード", "町字ID", "所在地_連結表記", "所在地_都道府県", "所在地_市区町村"], "label": "library", "note": "", "rule": "library"}
 {"datasetId": "t131059d0313060001", "name": "区立図書館", "organization": "文京区", "columns": ["施設名", "施設名（英語）", "郵便番号", "住所", "緯度", "経度", "電話", "開館時間（平日・土曜）", "開館時間（日曜・祝日）", "開館時間（12/29）", "定期休館日", "その他休館日"], "label": "library", "note": "", "rule": "library"}
@@ -31,7 +31,7 @@
 {"datasetId": "t313360d0000000001", "name": "都立文化施設事業一覧", "organization": "東京都生活文化スポーツ局", "columns": [], "label": "none", "note": "イベント一覧", "rule": "none"}
 {"datasetId": "t131024d0000000004", "name": "資源回収箱設置公共施設一覧", "organization": "中央区", "columns": [], "label": "none", "note": "回収箱の設置場所", "rule": "none"}
 {"datasetId": "t132098d0000000024", "name": "移動図書館巡回場所", "organization": "町田市", "columns": [], "label": "none", "note": "巡回の停車場所", "rule": "none"}
-{"datasetId": "t131091d0000000026", "name": "文化財", "organization": "品川区", "columns": ["番号", "遺跡名", "所在地", "遺跡の概要", "時代", "出土遺物", "緯度", "経度"], "label": "none", "note": "中身は遺跡一覧（埋蔵文化財）。人手で不採用（overrides）", "rule": "none"}
+{"datasetId": "t131091d0000000026", "name": "文化財", "organization": "品川区", "columns": ["番号", "遺跡名", "所在地", "遺跡の概要", "時代", "出土遺物", "緯度", "経度"], "label": "none", "note": "中身は遺跡一覧（埋蔵文化財）。overrides で不採用（エージェント判断・ユーザー承認済み）", "rule": "none"}
 {"datasetId": "t000003d2000001163", "name": "東京都統計年鑑　令和6年　17　教育・文化・スポーツ", "organization": "東京都総務局", "columns": [], "label": "none", "note": "統計", "rule": "none"}
 {"datasetId": "t131032d0000000036", "name": "【行政資料集】環境・リサイクル", "organization": "港区", "columns": [], "label": "none", "note": "資料集", "rule": "none"}
 {"datasetId": "t132080d3100002077", "name": "(令和6年)武者小路実篤記念館(実篤公園)入場者数", "organization": "調布市", "columns": [], "label": "none", "note": "統計", "rule": "none"}
