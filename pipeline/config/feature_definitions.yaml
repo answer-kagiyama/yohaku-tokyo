@@ -1,0 +1,57 @@
+# 人間が定義するのは「欲しい概念」だけ。URL は書かない（ADR 0005）。
+# keywords:          カタログ検索語。タイトル一致を強いシグナルとして扱う
+# list_hints:        「施設の一覧」であることを示す語（単一施設の写真・点群などと区別）
+# exclude_keywords:  タイトルに含まれたら rejected（統計の推移・画像など、施設リストではないもの）
+# exclude_facility_names: 施設名がこの語で終わる（〜分館・分室も可）なら集計しない（他の feature との二重計上防止）。
+#                         「神田公園出張所」のように地区名に含まれるだけのものは除外しない
+# exclude_name_markers:   施設名のどこかに含まれたら集計しない（例: ※非公開 = 目的地にならない）
+# exclude_categories:     分類列（文化財分類・種別・分類・カテゴリ等）の値に含まれたら集計しない（例: 無形）
+# same_place_m:           名前が違ってもこの距離以内は同じ「場所」として 1 件に数える（所蔵品の水増し防止）
+# include_name_keywords:  指定時は施設名にいずれかを含むものだけを数える。区ごとにリストの粒度が違う
+#                         （資産台帳 vs 区民館のみ）ため、概念を揃えて比較可能にする
+# 全 feature 共通: タイトルに含まれたら施設リストではない文書とみなす
+global_exclude_keywords: [統計年鑑, 審議会, 世論調査, 行政資料集, 基礎資料集, 会議, 整備方針, 計画, 事業概要, 事務所概要, 事業一覧, 実態調査, 行動特性調査, 利用状況, バリアフリー, エレベーター, イベント, 喫煙, 介護]
+
+feature_definitions:
+  park:
+    label: 公園
+    enabled: true
+    keywords: [公園, 児童遊園, 緑地]
+    list_hints: [一覧, リスト, 所在地, 位置]
+    exclude_keywords: [推移, 画像, 写真, 樹木, 点群, 配置図, 工事, 予算, 利用者数, 入場者数, 面積別, 設置状況, 数と面積, 数及び面積, 面積・人口, トイレ, 便所, 駐車場, 駐輪場]
+
+  # 以下は Step 7 で有効化する
+  culture:
+    label: 文化
+    enabled: true
+    keywords: [文化財, 文化施設, 博物館, 資料館, 美術館]
+    list_hints: [一覧, リスト, 所在地]
+    exclude_keywords: [推移, 画像, 写真, 予算, 埋蔵, 包蔵地]
+    exclude_facility_names: [体育館, スポーツセンター, 運動場, 野球場, テニスコート, プール, 公園, 図書館]
+    exclude_name_markers: [非公開]
+    exclude_categories: [無形]
+    same_place_m: 30
+  publicFacility:
+    label: 公共施設
+    enabled: true
+    keywords: [公共施設, 地域センター, 区民館, 集会施設, 公会堂, 区民センター]
+    list_hints: [一覧, リスト, 所在地, 情報]
+    exclude_keywords: [推移, 画像, 写真, 予算, 白書, 回収, AED, トイレ, Wi-Fi, wifi, 喫煙, 避難, 自動販売機, 投票所]
+    exclude_facility_names: [公園, 児童遊園, 緑地, 図書館]
+    # 「公共施設」= 目的地になりうる地域の集会・交流施設（spec 0005）。学校・倉庫・住宅・便所は含めない
+    include_name_keywords: [区民館, 区民会館, 区民センター, 地域センター, 出張所, 集会所, 集会室, 会館, 公会堂, ホール, 交流, コミュニティ, プラザ, 児童館]
+    exclude_name_markers: [便所, トイレ, 倉庫, 備蓄, ストックヤード, 事務室, 住宅, 駐輪, 駐車, 旧]
+    same_place_m: 30
+  tourism:
+    label: 観光
+    enabled: true
+    keywords: [観光, 名所, 観光施設, 観光スポット]
+    list_hints: [一覧, リスト, 所在地]
+    exclude_keywords: [推移, 統計, 入込, 画像, 写真, 予算, トイレ, ルート, 調査]
+  library:
+    label: 図書館
+    enabled: true
+    keywords: [図書館]
+    list_hints: [一覧, リスト, 所在地]
+    exclude_keywords: [推移, 蔵書, 貸出, 利用者数, 予算, 移動図書館, 巡回]
+# stationUsage（乗降人員）は施設リストではないため discovery の対象外（Step 7 で別経路）

@@ -1,0 +1,1140 @@
+{
+  "feature": "tourism",
+  "radiusMeters": 500,
+  "crs": "EPSG:6677",
+  "generatedAt": "2026-09-28T02:05:45Z",
+  "municipalitySampling": "center + 8 @ r/2 + 16 @ r (GSI reverse geocoder)",
+  "unlocatedTolerance": 0.05,
+  "stations": [
+    {
+      "stationId": "tokyo",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131024d0000000020"
+      ]
+    },
+    {
+      "stationId": "yurakucho",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131024d0000000020"
+      ]
+    },
+    {
+      "stationId": "shimbashi",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131024d0000000020"
+      ]
+    },
+    {
+      "stationId": "hamamatsucho",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131024d0000000020"
+      ]
+    },
+    {
+      "stationId": "tamachi",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "takanawa-gateway",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "shinagawa",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131091d0000000005"
+      ]
+    },
+    {
+      "stationId": "osaki",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131091d0000000005:41",
+          "name": "大崎副都心の街並み",
+          "distanceM": 138.7,
+          "coordSource": "source",
+          "datasetId": "t131091d0000000005",
+          "organization": "品川区"
+        },
+        {
+          "id": "t131091d0000000005:42",
+          "name": "居木神社と居木橋貝塚",
+          "distanceM": 284.0,
+          "coordSource": "source",
+          "datasetId": "t131091d0000000005",
+          "organization": "品川区"
+        }
+      ],
+      "datasets": [
+        "t131091d0000000005"
+      ]
+    },
+    {
+      "stationId": "gotanda",
+      "status": "complete",
+      "count": 4,
+      "lowerBound": 4,
+      "municipalities": [
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131091d0000000005:90",
+          "name": "ねむの木の庭",
+          "distanceM": 203.8,
+          "coordSource": "source",
+          "datasetId": "t131091d0000000005",
+          "organization": "品川区"
+        },
+        {
+          "id": "t131091d0000000005:38",
+          "name": "五反田公園の桜並木",
+          "distanceM": 221.8,
+          "coordSource": "source",
+          "datasetId": "t131091d0000000005",
+          "organization": "品川区"
+        },
+        {
+          "id": "t131091d0000000005:91",
+          "name": "五反田ふれあい水辺広場",
+          "distanceM": 289.4,
+          "coordSource": "source",
+          "datasetId": "t131091d0000000005",
+          "organization": "品川区"
+        },
+        {
+          "id": "t131091d0000000005:36",
+          "name": "清泉女子大学（旧島津公爵邸）",
+          "distanceM": 486.7,
+          "coordSource": "source",
+          "datasetId": "t131091d0000000005",
+          "organization": "品川区"
+        }
+      ],
+      "datasets": [
+        "t131091d0000000005"
+      ]
+    },
+    {
+      "stationId": "meguro",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13110",
+          "name": "目黒区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131091d0000000005:35",
+          "name": "花房山の桜並木",
+          "distanceM": 285.3,
+          "coordSource": "source",
+          "datasetId": "t131091d0000000005",
+          "organization": "品川区"
+        }
+      ],
+      "datasets": [
+        "t131091d0000000005"
+      ]
+    },
+    {
+      "stationId": "ebisu",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13110",
+          "name": "目黒区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "shibuya",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "harajuku",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "yoyogi",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131041d0000000131"
+      ]
+    },
+    {
+      "stationId": "shinjuku",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131041d0000000131:2",
+          "name": "末広亭",
+          "distanceM": 494.9,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000131",
+          "organization": "新宿区"
+        }
+      ],
+      "datasets": [
+        "t131041d0000000131"
+      ]
+    },
+    {
+      "stationId": "shin-okubo",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131041d0000000131"
+      ]
+    },
+    {
+      "stationId": "takadanobaba",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131041d0000000131",
+        "t131164d0000000005"
+      ]
+    },
+    {
+      "stationId": "mejiro",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131041d0000000131:4",
+          "name": "中村彝アトリエ記念館",
+          "distanceM": 464.6,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000131",
+          "organization": "新宿区"
+        }
+      ],
+      "datasets": [
+        "t131041d0000000131",
+        "t131164d0000000005"
+      ]
+    },
+    {
+      "stationId": "ikebukuro",
+      "status": "complete",
+      "count": 3,
+      "lowerBound": 3,
+      "municipalities": [
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000005:3",
+          "name": "GLOBAL RING CAFE",
+          "distanceM": 188.7,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000005",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000005:1",
+          "name": "豊島区観光情報センター",
+          "distanceM": 190.0,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000005",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000005:2",
+          "name": "としま区民センター インフォメーション",
+          "distanceM": 418.3,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000005",
+          "organization": "豊島区"
+        }
+      ],
+      "datasets": [
+        "t131164d0000000005"
+      ]
+    },
+    {
+      "stationId": "otsuka",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131164d0000000005"
+      ]
+    },
+    {
+      "stationId": "sugamo",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131164d0000000005"
+      ]
+    },
+    {
+      "stationId": "komagome",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131164d0000000005"
+      ]
+    },
+    {
+      "stationId": "tabata",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131181d0000000006"
+      ]
+    },
+    {
+      "stationId": "nishi-nippori",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 9,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131181d0000000006:30",
+          "name": "諏方神社",
+          "distanceM": 145.3,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:31",
+          "name": "青雲寺",
+          "distanceM": 182.2,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:29",
+          "name": "浄光寺",
+          "distanceM": 215.2,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:32",
+          "name": "修性院",
+          "distanceM": 226.5,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:34",
+          "name": "向陵稲荷神社",
+          "distanceM": 296.1,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:28",
+          "name": "養福寺",
+          "distanceM": 357.1,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:33",
+          "name": "延命院",
+          "distanceM": 450.0,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:27",
+          "name": "経王寺",
+          "distanceM": 459.8,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:26",
+          "name": "本行寺",
+          "distanceM": 479.2,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        }
+      ],
+      "datasets": [
+        "t131067d0000000236",
+        "t131067d0000000251",
+        "t131181d0000000006"
+      ]
+    },
+    {
+      "stationId": "nippori",
+      "status": "complete",
+      "count": 10,
+      "lowerBound": 10,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131181d0000000006:26",
+          "name": "本行寺",
+          "distanceM": 173.1,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:27",
+          "name": "経王寺",
+          "distanceM": 227.9,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131067d0000000236:19",
+          "name": "朝倉彫塑館",
+          "distanceM": 248.2,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131181d0000000006:25",
+          "name": "善性寺",
+          "distanceM": 271.0,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131067d0000000251:38",
+          "name": "谷中天王寺五重塔跡",
+          "distanceM": 288.5,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131181d0000000006:33",
+          "name": "延命院",
+          "distanceM": 307.6,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:28",
+          "name": "養福寺",
+          "distanceM": 309.9,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000006:29",
+          "name": "浄光寺",
+          "distanceM": 426.5,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000006",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131067d0000000251:13",
+          "name": "岡倉天心記念公園",
+          "distanceM": 439.0,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:36",
+          "name": "徳川慶喜墓",
+          "distanceM": 492.4,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t131067d0000000236",
+        "t131067d0000000251",
+        "t131181d0000000006"
+      ]
+    },
+    {
+      "stationId": "uguisudani",
+      "status": "complete",
+      "count": 10,
+      "lowerBound": 10,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131067d0000000251:3",
+          "name": "寛永寺",
+          "distanceM": 321.1,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:22",
+          "name": "東京国立博物館",
+          "distanceM": 323.8,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:20",
+          "name": "子規庵",
+          "distanceM": 367.5,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:18",
+          "name": "書道博物館",
+          "distanceM": 387.0,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:22",
+          "name": "中村不折旧宅（書道博物館）",
+          "distanceM": 387.0,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:33",
+          "name": "表慶館",
+          "distanceM": 392.9,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:21",
+          "name": "ねぎし三平堂",
+          "distanceM": 419.0,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:23",
+          "name": "浄名院八万四千体地蔵",
+          "distanceM": 430.9,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:14",
+          "name": "国際子ども図書館",
+          "distanceM": 439.4,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:24",
+          "name": "入谷鬼子母神",
+          "distanceM": 473.8,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t131067d0000000236",
+        "t131067d0000000251",
+        "t131181d0000000006"
+      ]
+    },
+    {
+      "stationId": "ueno",
+      "status": "complete",
+      "count": 8,
+      "lowerBound": 8,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131067d0000000236:23",
+          "name": "東京文化会館",
+          "distanceM": 155.7,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:8",
+          "name": "上野の森美術館",
+          "distanceM": 214.0,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:4",
+          "name": "国立西洋美術館",
+          "distanceM": 217.3,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:12",
+          "name": "国立科学博物館",
+          "distanceM": 297.8,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:34",
+          "name": "清水観音堂",
+          "distanceM": 316.8,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:37",
+          "name": "西郷隆盛像",
+          "distanceM": 339.7,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:40",
+          "name": "上野の大仏",
+          "distanceM": 380.5,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:30",
+          "name": "上野動物園",
+          "distanceM": 483.5,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t131067d0000000236",
+        "t131067d0000000251"
+      ]
+    },
+    {
+      "stationId": "okachimachi",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 3,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131067d0000000236:1",
+          "name": "上野観光連盟",
+          "distanceM": 222.5,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000236:17",
+          "name": "下町風俗資料館",
+          "distanceM": 384.7,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000236",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000251:37",
+          "name": "西郷隆盛像",
+          "distanceM": 495.6,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000251",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t131067d0000000236",
+        "t131067d0000000251"
+      ]
+    },
+    {
+      "stationId": "akihabara",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131067d0000000236",
+        "t131067d0000000251"
+      ]
+    },
+    {
+      "stationId": "kanda",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131024d0000000020"
+      ]
+    }
+  ]
+}

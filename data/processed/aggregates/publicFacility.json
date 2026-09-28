@@ -1,0 +1,924 @@
+{
+  "feature": "publicFacility",
+  "radiusMeters": 500,
+  "crs": "EPSG:6677",
+  "generatedAt": "2026-09-28T02:05:45Z",
+  "municipalitySampling": "center + 8 @ r/2 + 16 @ r (GSI reverse geocoder)",
+  "unlocatedTolerance": 0.05,
+  "stations": [
+    {
+      "stationId": "tokyo",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131016d0000000001",
+        "t131024d0000000027"
+      ]
+    },
+    {
+      "stationId": "yurakucho",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131016d0000000001",
+        "t131024d0000000027"
+      ]
+    },
+    {
+      "stationId": "shimbashi",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131016d0000000001:90",
+          "name": "千代田区立内幸町ホール",
+          "distanceM": 392.7,
+          "coordSource": "geocode",
+          "datasetId": "t131016d0000000001",
+          "organization": "千代田区"
+        }
+      ],
+      "datasets": [
+        "t131016d0000000001",
+        "t131024d0000000027",
+        "t131032d0000000014"
+      ]
+    },
+    {
+      "stationId": "hamamatsucho",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131024d0000000027",
+        "t131032d0000000014"
+      ]
+    },
+    {
+      "stationId": "tamachi",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131032d0000000014:8",
+          "name": "芝区民協働スペース（芝コミュニティはうす）",
+          "distanceM": 462.3,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000014",
+          "organization": "港区"
+        }
+      ],
+      "datasets": [
+        "t131032d0000000014"
+      ]
+    },
+    {
+      "stationId": "takanawa-gateway",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131032d0000000014"
+      ]
+    },
+    {
+      "stationId": "shinagawa",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "partial",
+          "unlocated": 3
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131032d0000000014",
+        "t131091d0000000003"
+      ]
+    },
+    {
+      "stationId": "osaki",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "partial",
+          "unlocated": 3
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131091d0000000003:598",
+          "name": "大崎第二地域センター・区民集会所",
+          "distanceM": 283.5,
+          "coordSource": "geocode",
+          "datasetId": "t131091d0000000003",
+          "organization": "品川区"
+        },
+        {
+          "id": "t131091d0000000003:367",
+          "name": "大崎ゆうゆうプラザ",
+          "distanceM": 431.1,
+          "coordSource": "geocode",
+          "datasetId": "t131091d0000000003",
+          "organization": "品川区"
+        }
+      ],
+      "datasets": [
+        "t131091d0000000003"
+      ]
+    },
+    {
+      "stationId": "gotanda",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "partial",
+          "unlocated": 3
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131091d0000000003"
+      ]
+    },
+    {
+      "stationId": "meguro",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "partial",
+          "unlocated": 3
+        },
+        {
+          "code": "13110",
+          "name": "目黒区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131032d0000000014",
+        "t131091d0000000003"
+      ]
+    },
+    {
+      "stationId": "ebisu",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13110",
+          "name": "目黒区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "shibuya",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "harajuku",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "yoyogi",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131041d0000000064"
+      ]
+    },
+    {
+      "stationId": "shinjuku",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131041d0000000064"
+      ]
+    },
+    {
+      "stationId": "shin-okubo",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131041d0000000064"
+      ]
+    },
+    {
+      "stationId": "takadanobaba",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000010:68",
+          "name": "高田第二区民集会室",
+          "distanceM": 358.9,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000010",
+          "organization": "豊島区"
+        }
+      ],
+      "datasets": [
+        "t131041d0000000064",
+        "t131164d0000000010"
+      ]
+    },
+    {
+      "stationId": "mejiro",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000010:80",
+          "name": "目白第二区民集会室",
+          "distanceM": 152.8,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000010",
+          "organization": "豊島区"
+        }
+      ],
+      "datasets": [
+        "t131041d0000000064",
+        "t131164d0000000010"
+      ]
+    },
+    {
+      "stationId": "ikebukuro",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000010:253",
+          "name": "としま区民センター",
+          "distanceM": 418.7,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000010",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000010:254",
+          "name": "としま産業振興プラザ",
+          "distanceM": 473.9,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000010",
+          "organization": "豊島区"
+        }
+      ],
+      "datasets": [
+        "t131164d0000000010"
+      ]
+    },
+    {
+      "stationId": "otsuka",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131164d0000000010"
+      ]
+    },
+    {
+      "stationId": "sugamo",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000010:533",
+          "name": "第5コミュニティ広場(わたしの庭、みんなの庭)",
+          "distanceM": 470.2,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000010",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000010:78",
+          "name": "巣鴨第三区民集会室",
+          "distanceM": 495.2,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000010",
+          "organization": "豊島区"
+        }
+      ],
+      "datasets": [
+        "t131059d0103010001",
+        "t131164d0000000010"
+      ]
+    },
+    {
+      "stationId": "komagome",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000010:533",
+          "name": "第5コミュニティ広場(わたしの庭、みんなの庭)",
+          "distanceM": 422.5,
+          "coordSource": "source",
+          "datasetId": "t131164d0000000010",
+          "organization": "豊島区"
+        }
+      ],
+      "datasets": [
+        "t131059d0103010001",
+        "t131164d0000000010"
+      ]
+    },
+    {
+      "stationId": "tabata",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131181d0000000005"
+      ]
+    },
+    {
+      "stationId": "nishi-nippori",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131059d0103010001",
+        "t131067d0000000232",
+        "t131181d0000000005"
+      ]
+    },
+    {
+      "stationId": "nippori",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131181d0000000005:48",
+          "name": "日暮里サニーホール",
+          "distanceM": 164.7,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000005",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131067d0000000232:16",
+          "name": "台東区谷中防災コミュニティセンター",
+          "distanceM": 497.1,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000232",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t131067d0000000232",
+        "t131181d0000000005"
+      ]
+    },
+    {
+      "stationId": "uguisudani",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131067d0000000232:14",
+          "name": "入谷区民館根岸分館（休館中）",
+          "distanceM": 381.2,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000232",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t131067d0000000232",
+        "t131181d0000000005"
+      ]
+    },
+    {
+      "stationId": "ueno",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t000029d0000000030:9",
+          "name": "東京文化会館",
+          "distanceM": 165.4,
+          "coordSource": "source",
+          "datasetId": "t000029d0000000030",
+          "organization": "東京都デジタルサービス局"
+        },
+        {
+          "id": "t131067d0000000232:11",
+          "name": "東上野区民館",
+          "distanceM": 363.6,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000232",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t000029d0000000030",
+        "t131067d0000000232"
+      ]
+    },
+    {
+      "stationId": "okachimachi",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131016d0000000001",
+        "t131059d0103010001",
+        "t131067d0000000232"
+      ]
+    },
+    {
+      "stationId": "akihabara",
+      "status": "complete",
+      "count": 6,
+      "lowerBound": 6,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131016d0000000001:83",
+          "name": "和泉橋出張所・区民館",
+          "distanceM": 167.3,
+          "coordSource": "geocode",
+          "datasetId": "t131016d0000000001",
+          "organization": "千代田区"
+        },
+        {
+          "id": "t131016d0000000001:89",
+          "name": "千代田区ふれあい会館",
+          "distanceM": 228.8,
+          "coordSource": "geocode",
+          "datasetId": "t131016d0000000001",
+          "organization": "千代田区"
+        },
+        {
+          "id": "t131016d0000000001:82",
+          "name": "万世橋出張所・区民館",
+          "distanceM": 232.7,
+          "coordSource": "geocode",
+          "datasetId": "t131016d0000000001",
+          "organization": "千代田区"
+        },
+        {
+          "id": "t131016d0000000001:1",
+          "name": "ちよだパークサイドプラザ",
+          "distanceM": 270.7,
+          "coordSource": "geocode",
+          "datasetId": "t131016d0000000001",
+          "organization": "千代田区"
+        },
+        {
+          "id": "t131016d0000000001:84",
+          "name": "千代田万世会館",
+          "distanceM": 289.7,
+          "coordSource": "geocode",
+          "datasetId": "t131016d0000000001",
+          "organization": "千代田区"
+        },
+        {
+          "id": "t131016d0000000001:53",
+          "name": "神田児童館",
+          "distanceM": 449.0,
+          "coordSource": "geocode",
+          "datasetId": "t131016d0000000001",
+          "organization": "千代田区"
+        }
+      ],
+      "datasets": [
+        "t131016d0000000001",
+        "t131059d0103010001",
+        "t131067d0000000232"
+      ]
+    },
+    {
+      "stationId": "kanda",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131016d0000000001:81",
+          "name": "神田公園出張所・区民館",
+          "distanceM": 293.3,
+          "coordSource": "geocode",
+          "datasetId": "t131016d0000000001",
+          "organization": "千代田区"
+        }
+      ],
+      "datasets": [
+        "t131016d0000000001",
+        "t131024d0000000027"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+{
+  "description": "Station master (spec 0008). Coordinates/lines: MLIT N02; raw: aggregates.",
+  "radiusMeters": 500,
+  "sources": [
+    {
+      "id": "mlit-n02",
+      "name": "国土数値情報 鉄道データ（N02）",
+      "organization": "国土交通省",
+      "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N02-2024.html",
+      "license": "CC BY 4.0",
+      "features": [],
+      "kind": "opendata"
+    }
+  ],
+  "stations": [
+    {
+      "id": "tokyo",
+      "name": "東京",
+      "nameEn": "Tokyo",
+      "lat": 35.680877,
+      "lng": 139.766676,
+      "municipality": "千代田区",
+      "lines": [
+        "JR東海東海道新幹線",
+        "東京メトロ丸ノ内線",
+        "JR京葉線",
+        "JR総武線",
+        "JR東海道線",
+        "JR東北新幹線",
+        "JR東北線"
+      ],
+      "areaMunicipalities": [
+        "千代田区",
+        "中央区"
+      ],
+      "n02Groups": [
+        "003766",
+        "003785"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "yurakucho",
+      "name": "有楽町",
+      "nameEn": "Yurakucho",
+      "lat": 35.67504,
+      "lng": 139.76326,
+      "municipality": "千代田区",
+      "lines": [
+        "東京メトロ有楽町線",
+        "JR東海道線"
+      ],
+      "areaMunicipalities": [
+        "千代田区",
+        "中央区"
+      ],
+      "n02Groups": [
+        "003795"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "shimbashi",
+      "name": "新橋",
+      "nameEn": "Shimbashi",
+      "lat": 35.666297,
+      "lng": 139.758465,
+      "municipality": "港区",
+      "lines": [
+        "東京臨海新交通臨海線",
+        "東京メトロ銀座線",
+        "都営浅草線",
+        "JR東海道線"
+      ],
+      "areaMunicipalities": [
+        "千代田区",
+        "中央区",
+        "港区"
+      ],
+      "n02Groups": [
+        "003872"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "hamamatsucho",
+      "name": "浜松町",
+      "nameEn": "Hamamatsucho",
+      "lat": 35.65541,
+      "lng": 139.757125,
+      "municipality": "港区",
+      "lines": [
+        "JR東海道線"
+      ],
+      "areaMunicipalities": [
+        "中央区",
+        "港区"
+      ],
+      "n02Groups": [
+        "003949"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "tamachi",
+      "name": "田町",
+      "nameEn": "Tamachi",
+      "lat": 35.64574,
+      "lng": 139.747605,
+      "municipality": "港区",
+      "lines": [
+        "JR東海道線"
+      ],
+      "areaMunicipalities": [
+        "港区"
+      ],
+      "n02Groups": [
+        "004000"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "takanawa-gateway",
+      "name": "高輪ゲートウェイ",
+      "nameEn": "Takanawa Gateway",
+      "lat": 35.635379,
+      "lng": 139.740644,
+      "municipality": "港区",
+      "lines": [
+        "JR東海道線"
+      ],
+      "areaMunicipalities": [
+        "港区"
+      ],
+      "n02Groups": [
+        "004061"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "shinagawa",
+      "name": "品川",
+      "nameEn": "Shinagawa",
+      "lat": 35.628445,
+      "lng": 139.738899,
+      "municipality": "港区",
+      "lines": [
+        "京浜急行電鉄本線",
+        "JR東海東海道新幹線",
+        "JR山手線",
+        "JR東海道線"
+      ],
+      "areaMunicipalities": [
+        "港区",
+        "品川区"
+      ],
+      "n02Groups": [
+        "004095"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "osaki",
+      "name": "大崎",
+      "nameEn": "Osaki",
+      "lat": 35.619945,
+      "lng": 139.728245,
+      "municipality": "品川区",
+      "lines": [
+        "臨海副都心線",
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "品川区"
+      ],
+      "n02Groups": [
+        "004135"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "gotanda",
+      "name": "五反田",
+      "nameEn": "Gotanda",
+      "lat": 35.62606,
+      "lng": 139.723696,
+      "municipality": "品川区",
+      "lines": [
+        "東急電鉄池上線",
+        "都営浅草線",
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "品川区"
+      ],
+      "n02Groups": [
+        "004110"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "meguro",
+      "name": "目黒",
+      "nameEn": "Meguro",
+      "lat": 35.633406,
+      "lng": 139.715727,
+      "municipality": "品川区",
+      "lines": [
+        "東急電鉄目黒線",
+        "都営三田線",
+        "JR山手線",
+        "東京メトロ南北線"
+      ],
+      "areaMunicipalities": [
+        "港区",
+        "品川区",
+        "目黒区"
+      ],
+      "n02Groups": [
+        "004072"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "ebisu",
+      "name": "恵比寿",
+      "nameEn": "Ebisu",
+      "lat": 35.64668,
+      "lng": 139.710125,
+      "municipality": "渋谷区",
+      "lines": [
+        "東京メトロ日比谷線",
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "目黒区",
+        "渋谷区"
+      ],
+      "n02Groups": [
+        "003991"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "shibuya",
+      "name": "渋谷",
+      "nameEn": "Shibuya",
+      "lat": 35.658082,
+      "lng": 139.701724,
+      "municipality": "渋谷区",
+      "lines": [
+        "京王電鉄井の頭線",
+        "東急電鉄田園都市線",
+        "東急電鉄東横線",
+        "東京メトロ銀座線",
+        "東京メトロ半蔵門線",
+        "JR山手線",
+        "東京メトロ副都心線"
+      ],
+      "areaMunicipalities": [
+        "渋谷区"
+      ],
+      "n02Groups": [
+        "003922"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "harajuku",
+      "name": "原宿",
+      "nameEn": "Harajuku",
+      "lat": 35.67132,
+      "lng": 139.702712,
+      "municipality": "渋谷区",
+      "lines": [
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "渋谷区"
+      ],
+      "n02Groups": [
+        "003828"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "yoyogi",
+      "name": "代々木",
+      "nameEn": "Yoyogi",
+      "lat": 35.683795,
+      "lng": 139.70221,
+      "municipality": "渋谷区",
+      "lines": [
+        "都営大江戸線",
+        "JR山手線",
+        "JR中央線"
+      ],
+      "areaMunicipalities": [
+        "新宿区",
+        "渋谷区"
+      ],
+      "n02Groups": [
+        "003743"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "shinjuku",
+      "name": "新宿",
+      "nameEn": "Shinjuku",
+      "lat": 35.689921,
+      "lng": 139.700636,
+      "municipality": "新宿区",
+      "lines": [
+        "京王電鉄京王線",
+        "小田急電鉄小田原線",
+        "東京メトロ丸ノ内線",
+        "都営新宿線",
+        "都営大江戸線",
+        "JR山手線",
+        "JR中央線"
+      ],
+      "areaMunicipalities": [
+        "新宿区",
+        "渋谷区"
+      ],
+      "n02Groups": [
+        "003700"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "shin-okubo",
+      "name": "新大久保",
+      "nameEn": "Shin-Okubo",
+      "lat": 35.70093,
+      "lng": 139.700255,
+      "municipality": "新宿区",
+      "lines": [
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "新宿区"
+      ],
+      "n02Groups": [
+        "003601"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "takadanobaba",
+      "name": "高田馬場",
+      "nameEn": "Takadanobaba",
+      "lat": 35.713313,
+      "lng": 139.703965,
+      "municipality": "新宿区",
+      "lines": [
+        "西武鉄道新宿線",
+        "東京メトロ東西線",
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "新宿区",
+        "豊島区"
+      ],
+      "n02Groups": [
+        "003508"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "mejiro",
+      "name": "目白",
+      "nameEn": "Mejiro",
+      "lat": 35.72039,
+      "lng": 139.70628,
+      "municipality": "豊島区",
+      "lines": [
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "新宿区",
+        "豊島区"
+      ],
+      "n02Groups": [
+        "003470"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "ikebukuro",
+      "name": "池袋",
+      "nameEn": "Ikebukuro",
+      "lat": 35.730238,
+      "lng": 139.711212,
+      "municipality": "豊島区",
+      "lines": [
+        "西武鉄道池袋線",
+        "東京メトロ丸ノ内線",
+        "東京メトロ有楽町線",
+        "JR山手線",
+        "JR赤羽線",
+        "東武鉄道東上本線"
+      ],
+      "areaMunicipalities": [
+        "豊島区"
+      ],
+      "n02Groups": [
+        "003390"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "otsuka",
+      "name": "大塚",
+      "nameEn": "Otsuka",
+      "lat": 35.731785,
+      "lng": 139.72794,
+      "municipality": "豊島区",
+      "lines": [
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "豊島区"
+      ],
+      "n02Groups": [
+        "003375"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "sugamo",
+      "name": "巣鴨",
+      "nameEn": "Sugamo",
+      "lat": 35.73372,
+      "lng": 139.74035,
+      "municipality": "豊島区",
+      "lines": [
+        "都営三田線",
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "文京区",
+        "豊島区"
+      ],
+      "n02Groups": [
+        "003354"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "komagome",
+      "name": "駒込",
+      "nameEn": "Komagome",
+      "lat": 35.737027,
+      "lng": 139.7484,
+      "municipality": "豊島区",
+      "lines": [
+        "東京メトロ南北線",
+        "JR山手線"
+      ],
+      "areaMunicipalities": [
+        "文京区",
+        "豊島区",
+        "北区"
+      ],
+      "n02Groups": [
+        "003343"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "tabata",
+      "name": "田端",
+      "nameEn": "Tabata",
+      "lat": 35.737475,
+      "lng": 139.761575,
+      "municipality": "北区",
+      "lines": [
+        "JR山手線",
+        "JR東北線"
+      ],
+      "areaMunicipalities": [
+        "北区",
+        "荒川区"
+      ],
+      "n02Groups": [
+        "003335"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "nishi-nippori",
+      "name": "西日暮里",
+      "nameEn": "Nishi-Nippori",
+      "lat": 35.732175,
+      "lng": 139.766715,
+      "municipality": "荒川区",
+      "lines": [
+        "東京メトロ千代田線",
+        "JR東北線",
+        "都営日暮里・舎人ライナー"
+      ],
+      "areaMunicipalities": [
+        "文京区",
+        "台東区",
+        "北区",
+        "荒川区"
+      ],
+      "n02Groups": [
+        "003368"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "nippori",
+      "name": "日暮里",
+      "nameEn": "Nippori",
+      "lat": 35.727789,
+      "lng": 139.771086,
+      "municipality": "荒川区",
+      "lines": [
+        "京成電鉄本線",
+        "JR常磐線",
+        "JR東北線",
+        "都営日暮里・舎人ライナー"
+      ],
+      "areaMunicipalities": [
+        "台東区",
+        "荒川区"
+      ],
+      "n02Groups": [
+        "003417"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "uguisudani",
+      "name": "鶯谷",
+      "nameEn": "Uguisudani",
+      "lat": 35.721455,
+      "lng": 139.77803,
+      "municipality": "台東区",
+      "lines": [
+        "JR東北線"
+      ],
+      "areaMunicipalities": [
+        "台東区",
+        "荒川区"
+      ],
+      "n02Groups": [
+        "003460"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "ueno",
+      "name": "上野",
+      "nameEn": "Ueno",
+      "lat": 35.713624,
+      "lng": 139.776848,
+      "municipality": "台東区",
+      "lines": [
+        "東京メトロ日比谷線",
+        "東京メトロ銀座線",
+        "JR東北新幹線",
+        "JR東北線"
+      ],
+      "areaMunicipalities": [
+        "台東区"
+      ],
+      "n02Groups": [
+        "003505"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "okachimachi",
+      "name": "御徒町",
+      "nameEn": "Okachimachi",
+      "lat": 35.707195,
+      "lng": 139.774715,
+      "municipality": "台東区",
+      "lines": [
+        "JR東北線"
+      ],
+      "areaMunicipalities": [
+        "千代田区",
+        "文京区",
+        "台東区"
+      ],
+      "n02Groups": [
+        "003555"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "akihabara",
+      "name": "秋葉原",
+      "nameEn": "Akihabara",
+      "lat": 35.698427,
+      "lng": 139.77313,
+      "municipality": "千代田区",
+      "lines": [
+        "常磐新線",
+        "東京メトロ日比谷線",
+        "JR総武線",
+        "JR東北線"
+      ],
+      "areaMunicipalities": [
+        "千代田区",
+        "文京区",
+        "台東区"
+      ],
+      "n02Groups": [
+        "003624"
+      ],
+      "raw": {}
+    },
+    {
+      "id": "kanda",
+      "name": "神田",
+      "nameEn": "Kanda",
+      "lat": 35.69177,
+      "lng": 139.770875,
+      "municipality": "千代田区",
+      "lines": [
+        "東京メトロ銀座線",
+        "JR中央線",
+        "JR東北線"
+      ],
+      "areaMunicipalities": [
+        "千代田区",
+        "中央区"
+      ],
+      "n02Groups": [
+        "003677"
+      ],
+      "raw": {}
+    }
+  ]
+}

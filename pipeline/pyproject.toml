@@ -1,0 +1,46 @@
+[project]
+name = "station-pipeline"
+version = "0.1.0"
+description = "YOHAKU TOKYO data pipeline: station features -> scores -> stations.json"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geopandas>=1.1.4",
+    "pyproj>=3.8.0",
+    "pyyaml>=6.0.3",
+    "shapely>=2.1.2",
+]
+
+[project.scripts]
+station-pipeline = "station_pipeline.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "ruff>=0.6",
+    "types-pyyaml>=6.0.12.20260906",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/station_pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# Lookup table laid out several entries per line for readability.
+"src/station_pipeline/geo/municipalities.py" = ["E501"]
+# Verbatim CSV header lines as observed in the statistical yearbook.
+"tests/test_ridership.py" = ["E501"]

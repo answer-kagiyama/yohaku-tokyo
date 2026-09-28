@@ -1,0 +1,67 @@
+{
+  "description": "Phase 0-Step 3 fixture. raw の値はすべて架空のサンプル値であり、実データではない。null は欠損（取得失敗・未整備）を表し、0 とは異なる。",
+  "radiusMeters": 500,
+  "sources": [
+    {
+      "id": "fixture-sample",
+      "name": "YOHAKU TOKYO サンプル値（fixture）",
+      "organization": "YOHAKU TOKYO",
+      "url": null,
+      "license": "N/A（架空データ）",
+      "features": ["tourism", "culture", "publicFacility", "park", "library", "stationUsage"],
+      "kind": "fixture"
+    }
+  ],
+  "stations": [
+    {
+      "id": "akihabara",
+      "name": "秋葉原",
+      "nameEn": "Akihabara",
+      "lat": 35.6984,
+      "lng": 139.7731,
+      "municipality": "千代田区",
+      "lines": ["JR山手線", "JR京浜東北線", "JR総武線", "東京メトロ日比谷線", "つくばエクスプレス"],
+      "raw": { "tourism": 14, "culture": 6, "publicFacility": 7, "park": 3, "library": 1, "stationUsage": 250000 }
+    },
+    {
+      "id": "okachimachi",
+      "name": "御徒町",
+      "nameEn": "Okachimachi",
+      "lat": 35.7075,
+      "lng": 139.7748,
+      "municipality": "台東区",
+      "lines": ["JR山手線", "JR京浜東北線"],
+      "raw": { "tourism": 5, "culture": 4, "publicFacility": 5, "park": 4, "library": 1, "stationUsage": 70000 }
+    },
+    {
+      "id": "ueno",
+      "name": "上野",
+      "nameEn": "Ueno",
+      "lat": 35.7141,
+      "lng": 139.7774,
+      "municipality": "台東区",
+      "lines": ["JR山手線", "JR京浜東北線", "JR宇都宮線", "JR高崎線", "JR常磐線", "東京メトロ銀座線", "東京メトロ日比谷線"],
+      "raw": { "tourism": 22, "culture": 18, "publicFacility": 9, "park": 6, "library": 2, "stationUsage": 180000 }
+    },
+    {
+      "id": "kanda",
+      "name": "神田",
+      "nameEn": "Kanda",
+      "lat": 35.6918,
+      "lng": 139.7709,
+      "municipality": "千代田区",
+      "lines": ["JR山手線", "JR京浜東北線", "JR中央線", "東京メトロ銀座線"],
+      "raw": { "tourism": 3, "culture": 5, "publicFacility": 6, "park": 2, "library": 0, "stationUsage": 100000 }
+    },
+    {
+      "id": "asakusabashi",
+      "name": "浅草橋",
+      "nameEn": "Asakusabashi",
+      "lat": 35.6972,
+      "lng": 139.7862,
+      "municipality": "台東区",
+      "lines": ["JR総武線", "都営浅草線"],
+      "raw": { "tourism": 2, "culture": 3, "publicFacility": 4, "park": 5, "library": null, "stationUsage": 50000 }
+    }
+  ]
+}

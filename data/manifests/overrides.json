@@ -1,0 +1,13 @@
+{
+  "$comment": "人手レビューによる status の上書き。キーは datasetId（manifest の値）。status: accepted | review | rejected。自動判定は manifest の autoStatus に残る。",
+  "datasets": {
+    "culture/t131059d0304010001": {
+      "status": "accepted",
+      "note": "文京区には文化財一覧がない。文化・スポーツ施設のうち文化施設（シビックホール・アカデミー各館）を採用し、スポーツ施設は culture.exclude_facility_names で除外する（2026-09-28）"
+    },
+    "culture/t131091d0000000026": {
+      "status": "rejected",
+      "note": "中身は遺跡一覧（遺跡名・時代・出土遺物）で、多くは埋蔵文化財。目的地ではないため不採用（culture の除外語「埋蔵」「包蔵地」と同じ方針）。2026-09-28"
+    }
+  }
+}

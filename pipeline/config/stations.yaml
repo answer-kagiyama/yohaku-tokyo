@@ -1,0 +1,15 @@
+# 対象駅（Phase 3: 山手線 30 駅, spec 0008）。
+# 人が定義するのは駅名だけ。座標・路線は国土数値情報 N02、英語名は東京都統計年鑑から取る。
+source:
+  name: 国土数値情報 鉄道データ（N02）
+  publisher: 国土交通省
+  license: CC BY 4.0
+  attribution: 「国土数値情報（鉄道データ）」（国土交通省）を加工して作成
+  page: https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N02-2024.html
+  url: https://nlftp.mlit.go.jp/ksj/gml/data/N02/N02-24/N02-24_GML.zip
+  member: UTF-8/N02-24_Station.geojson
+
+operator: 東日本旅客鉄道
+
+# 山手線 外回り順（東京 → 有楽町 → … → 神田）
+stations: [東京, 有楽町, 新橋, 浜松町, 田町, 高輪ゲートウェイ, 品川, 大崎, 五反田, 目黒, 恵比寿, 渋谷, 原宿, 代々木, 新宿, 新大久保, 高田馬場, 目白, 池袋, 大塚, 巣鴨, 駒込, 田端, 西日暮里, 日暮里, 鶯谷, 上野, 御徒町, 秋葉原, 神田]

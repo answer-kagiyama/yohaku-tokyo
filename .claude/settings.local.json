@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(pnpm -v)",
+      "Bash(uv --version)",
+      "Bash(make --version)",
+      "Bash(git --version)",
+      "Bash(curl -sI https://nodejs.org/dist/index.json)",
+      "Bash(curl -s https://nodejs.org/dist/index.json)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\([x['version'] for x in d if x['lts']][:3]\\)\")"
+    ]
+  }
+}

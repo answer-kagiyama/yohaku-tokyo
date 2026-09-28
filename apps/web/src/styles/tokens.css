@@ -1,0 +1,51 @@
+/*
+ * YOHAKU TOKYO design tokens — the single source of truth for the visual language.
+ * See docs/design-system.md. Do not use Tailwind palette colors (bg-blue-500 …) directly.
+ */
+:root {
+  /* Paper & ink */
+  --yk-paper: #f4f1ea;
+  --yk-paper-sunken: #ebe7dc;
+  --yk-paper-raised: #faf8f3;
+  --yk-ink: #1e1d1b;
+  --yk-ink-muted: #57534c;
+  --yk-ink-faint: #655f57;
+
+  /* Rules (borders) */
+  --yk-rule: #d5cfc1;
+  --yk-rule-input: #857f73;
+  --yk-rule-strong: #1e1d1b;
+
+  /* The one accent: vermilion (朱) */
+  --yk-vermilion: #ad3620;
+  --yk-vermilion-soft: #f2e3db;
+
+  /* Data */
+  --yk-data: #3d3a35;
+  --yk-data-track: #e2ddd1;
+  --yk-missing: repeating-linear-gradient(
+    -45deg,
+    var(--yk-data-track) 0 4px,
+    var(--yk-paper) 4px 7px
+  );
+
+  /* Shape */
+  --yk-radius-sm: 2px;
+  --yk-radius-md: 4px;
+  --yk-radius-lg: 6px;
+  --yk-shadow-pop: 0 1px 0 rgb(30 29 27 / 0.04), 0 6px 16px -8px rgb(30 29 27 / 0.18);
+
+  /* Motion */
+  --yk-duration: 150ms;
+
+  /* Layout */
+  --yk-gutter: 1.25rem;
+  --yk-measure: 42rem;
+  --yk-page: 72rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --yk-gutter: 2.5rem;
+  }
+}

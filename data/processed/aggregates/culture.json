@@ -1,0 +1,1421 @@
+{
+  "feature": "culture",
+  "radiusMeters": 500,
+  "crs": "EPSG:6677",
+  "generatedAt": "2026-09-28T02:05:45Z",
+  "municipalitySampling": "center + 8 @ r/2 + 16 @ r (GSI reverse geocoder)",
+  "unlocatedTolerance": 0.05,
+  "stations": [
+    {
+      "stationId": "tokyo",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131016d0000000002",
+        "t131024d0000000024"
+      ]
+    },
+    {
+      "stationId": "yurakucho",
+      "status": "complete",
+      "count": 4,
+      "lowerBound": 4,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131024d0000000024:37",
+          "name": "燈臺 北村西望作 銅造彫刻 附 石造台座",
+          "distanceM": 243.9,
+          "coordSource": "source",
+          "datasetId": "t131024d0000000024",
+          "organization": "中央区"
+        },
+        {
+          "id": "t131024d0000000024:78",
+          "name": "越後屋文書",
+          "distanceM": 396.4,
+          "coordSource": "source",
+          "datasetId": "t131024d0000000024",
+          "organization": "中央区"
+        },
+        {
+          "id": "t131024d0000000024:96",
+          "name": "銀座出世地蔵尊",
+          "distanceM": 459.2,
+          "coordSource": "source",
+          "datasetId": "t131024d0000000024",
+          "organization": "中央区"
+        },
+        {
+          "id": "t131024d0000000024:68",
+          "name": "引幕図案見本帳",
+          "distanceM": 473.6,
+          "coordSource": "source",
+          "datasetId": "t131024d0000000024",
+          "organization": "中央区"
+        }
+      ],
+      "datasets": [
+        "t131016d0000000002",
+        "t131024d0000000024"
+      ]
+    },
+    {
+      "stationId": "shimbashi",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 1
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131032d0000000095:19",
+          "name": "足利成氏文書",
+          "distanceM": 171.0,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:184",
+          "name": "新橋親柱",
+          "distanceM": 265.1,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        }
+      ],
+      "datasets": [
+        "t131016d0000000002",
+        "t131024d0000000024",
+        "t131032d0000000095"
+      ]
+    },
+    {
+      "stationId": "hamamatsucho",
+      "status": "complete",
+      "count": 6,
+      "lowerBound": 6,
+      "municipalities": [
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 1
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131032d0000000095:64",
+          "name": "力石",
+          "distanceM": 184.6,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:48",
+          "name": "ガス創業の地",
+          "distanceM": 217.8,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:15",
+          "name": "尾崎紅葉生誕の地",
+          "distanceM": 342.6,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:10",
+          "name": "足利直義御教書",
+          "distanceM": 445.8,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:182",
+          "name": "大門",
+          "distanceM": 453.5,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:112",
+          "name": "元禄七年銘納経石塔",
+          "distanceM": 490.3,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        }
+      ],
+      "datasets": [
+        "t131024d0000000024",
+        "t131032d0000000095"
+      ]
+    },
+    {
+      "stationId": "tamachi",
+      "status": "complete",
+      "count": 3,
+      "lowerBound": 3,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 1
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131032d0000000095:56",
+          "name": "雑魚場跡",
+          "distanceM": 202.1,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t000021d2000000005:2",
+          "name": "＊?港郷土資料館",
+          "distanceM": 260.8,
+          "coordSource": "source",
+          "datasetId": "t000021d2000000005",
+          "organization": "東京都教育庁"
+        },
+        {
+          "id": "t131032d0000000095:193",
+          "name": "曲直瀬家文書",
+          "distanceM": 489.3,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        }
+      ],
+      "datasets": [
+        "t000021d2000000005",
+        "t131032d0000000095"
+      ]
+    },
+    {
+      "stationId": "takanawa-gateway",
+      "status": "complete",
+      "count": 4,
+      "lowerBound": 4,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 1
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131032d0000000095:60",
+          "name": "庚申塔",
+          "distanceM": 252.1,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:155",
+          "name": "牛供養塔及び二千七百六十人之霊供養塔",
+          "distanceM": 403.8,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:102",
+          "name": "泉岳寺中門",
+          "distanceM": 432.4,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:159",
+          "name": "白隠慧鶴筆「金剛窟」(室号)",
+          "distanceM": 486.0,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        }
+      ],
+      "datasets": [
+        "t131032d0000000095"
+      ]
+    },
+    {
+      "stationId": "shinagawa",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 1
+        },
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131032d0000000095:65",
+          "name": "石灯籠(おしゃもじさま)",
+          "distanceM": 171.3,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        },
+        {
+          "id": "t131032d0000000095:199",
+          "name": "高輪プリンスホテル観音堂・鐘楼・三門",
+          "distanceM": 461.5,
+          "coordSource": "source",
+          "datasetId": "t131032d0000000095",
+          "organization": "港区"
+        }
+      ],
+      "datasets": [
+        "t131032d0000000095"
+      ]
+    },
+    {
+      "stationId": "osaki",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "gotanda",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t000021d0000000017:4",
+          "name": "旧島津公爵家袖ヶ崎本邸洋館（清泉女子大学本館）",
+          "distanceM": 486.6,
+          "coordSource": "source",
+          "datasetId": "t000021d0000000017",
+          "organization": "東京都教育庁"
+        }
+      ],
+      "datasets": [
+        "t000021d0000000017"
+      ]
+    },
+    {
+      "stationId": "meguro",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13103",
+          "name": "港区",
+          "coverage": "covered",
+          "unlocated": 1
+        },
+        {
+          "code": "13109",
+          "name": "品川区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13110",
+          "name": "目黒区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t000021d0000000017:96",
+          "name": "大円寺石仏群",
+          "distanceM": 194.1,
+          "coordSource": "source",
+          "datasetId": "t000021d0000000017",
+          "organization": "東京都教育庁"
+        }
+      ],
+      "datasets": [
+        "t000021d0000000017",
+        "t131032d0000000095"
+      ]
+    },
+    {
+      "stationId": "ebisu",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13110",
+          "name": "目黒区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "shibuya",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t000021d2000000005:26",
+          "name": "＊?こども科学センター・ハチラボ",
+          "distanceM": 331.8,
+          "coordSource": "source",
+          "datasetId": "t000021d2000000005",
+          "organization": "東京都教育庁"
+        }
+      ],
+      "datasets": [
+        "t000021d2000000005"
+      ]
+    },
+    {
+      "stationId": "harajuku",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": []
+    },
+    {
+      "stationId": "yoyogi",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131041d0000000114"
+      ]
+    },
+    {
+      "stationId": "shinjuku",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 5,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13113",
+          "name": "渋谷区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131041d0000000114:233",
+          "name": "ムーラン・ルージュ新宿座跡",
+          "distanceM": 124.9,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        },
+        {
+          "id": "t131041d0000000114:23",
+          "name": "馬水槽",
+          "distanceM": 246.2,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        },
+        {
+          "id": "t131041d0000000114:201",
+          "name": "名曲喫茶らんぶる",
+          "distanceM": 308.7,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        },
+        {
+          "id": "t131041d0000000114:24",
+          "name": "天龍寺の時の鐘",
+          "distanceM": 331.1,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        },
+        {
+          "id": "t131041d0000000114:187",
+          "name": "末広亭",
+          "distanceM": 491.6,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        }
+      ],
+      "datasets": [
+        "t131041d0000000114"
+      ]
+    },
+    {
+      "stationId": "shin-okubo",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131041d0000000114:116",
+          "name": "全龍寺の庚申塔",
+          "distanceM": 224.2,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        },
+        {
+          "id": "t131041d0000000114:166",
+          "name": "下村湖人終焉の地",
+          "distanceM": 310.1,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        }
+      ],
+      "datasets": [
+        "t131041d0000000114"
+      ]
+    },
+    {
+      "stationId": "takadanobaba",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 8
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131041d0000000114",
+        "t131164d0000000007"
+      ]
+    },
+    {
+      "stationId": "mejiro",
+      "status": "complete",
+      "count": 4,
+      "lowerBound": 4,
+      "municipalities": [
+        {
+          "code": "13104",
+          "name": "新宿区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 8
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000007:388",
+          "name": "乃木大将経営榊壇",
+          "distanceM": 130.5,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131041d0000000114:196",
+          "name": "旧近衛邸のケヤキ",
+          "distanceM": 165.7,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        },
+        {
+          "id": "t131041d0000000114:191",
+          "name": "近衛篤麿公記念碑",
+          "distanceM": 331.8,
+          "coordSource": "source",
+          "datasetId": "t131041d0000000114",
+          "organization": "新宿区"
+        },
+        {
+          "id": "t000021d2000000005:5",
+          "name": "＊?中村彝アトリエ記念館",
+          "distanceM": 444.4,
+          "coordSource": "source",
+          "datasetId": "t000021d2000000005",
+          "organization": "東京都教育庁"
+        }
+      ],
+      "datasets": [
+        "t000021d2000000005",
+        "t131041d0000000114",
+        "t131164d0000000007"
+      ]
+    },
+    {
+      "stationId": "ikebukuro",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 8
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t000021d2000000005:28",
+          "name": "＊?郷土資料館",
+          "distanceM": 491.6,
+          "coordSource": "source",
+          "datasetId": "t000021d2000000005",
+          "organization": "東京都教育庁"
+        }
+      ],
+      "datasets": [
+        "t000021d2000000005",
+        "t131164d0000000007"
+      ]
+    },
+    {
+      "stationId": "otsuka",
+      "status": "complete",
+      "count": 0,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 8
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131164d0000000007"
+      ]
+    },
+    {
+      "stationId": "sugamo",
+      "status": "complete",
+      "count": 4,
+      "lowerBound": 4,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 8
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000007:364",
+          "name": "駒型庚申塔",
+          "distanceM": 329.5,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000007:337",
+          "name": "角柱型庚申塔（延宝八年在銘）",
+          "distanceM": 443.6,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000007:3",
+          "name": "旧丹羽家腕木門",
+          "distanceM": 496.2,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000007:300",
+          "name": "彌陀三尊板碑画像・庚申待供養結衆板碑（大永八年在銘）",
+          "distanceM": 497.9,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        }
+      ],
+      "datasets": [
+        "t131059d0304010001",
+        "t131164d0000000007"
+      ]
+    },
+    {
+      "stationId": "komagome",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 4,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13116",
+          "name": "豊島区",
+          "coverage": "covered",
+          "unlocated": 8
+        },
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131164d0000000007:8",
+          "name": "鹿碑（寛政七年在銘）",
+          "distanceM": 263.0,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000007:322",
+          "name": "板碑型庚申塔（寛永十九年在銘）",
+          "distanceM": 331.2,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000007:337",
+          "name": "角柱型庚申塔（延宝八年在銘）",
+          "distanceM": 424.9,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        },
+        {
+          "id": "t131164d0000000007:336",
+          "name": "笠付角柱型庚申塔（寛文十二年在銘）",
+          "distanceM": 481.1,
+          "coordSource": "geocode",
+          "datasetId": "t131164d0000000007",
+          "organization": "豊島区"
+        }
+      ],
+      "datasets": [
+        "t131059d0304010001",
+        "t131164d0000000007"
+      ]
+    },
+    {
+      "stationId": "tabata",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 0,
+      "municipalities": [
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 1
+        }
+      ],
+      "facilities": [],
+      "datasets": [
+        "t131181d0000000010"
+      ]
+    },
+    {
+      "stationId": "nishi-nippori",
+      "status": "incomplete",
+      "count": null,
+      "lowerBound": 12,
+      "municipalities": [
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 7
+        },
+        {
+          "code": "13117",
+          "name": "北区",
+          "coverage": "uncovered",
+          "unlocated": 0
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 1
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131181d0000000010:106",
+          "name": "手水鉢（天保二年三月吉日銘）",
+          "distanceM": 149.0,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:110",
+          "name": "安井金毘羅大権現鎮座碑",
+          "distanceM": 193.0,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:184",
+          "name": "庚申塔群七基（寛文十年八月十五日銘他）",
+          "distanceM": 221.9,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:130",
+          "name": "三十番神像版木（寛政十三年四月大吉辰銘）",
+          "distanceM": 229.8,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:186",
+          "name": "うすさま明王石像",
+          "distanceM": 279.1,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:1",
+          "name": "養福寺仁王門",
+          "distanceM": 333.9,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:234",
+          "name": "松林伯円の墓(初代・二代)",
+          "distanceM": 344.1,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:243",
+          "name": "佐竹氏屋敷跡",
+          "distanceM": 392.0,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:201",
+          "name": "庚申塔（延宝八年十一月五日銘）",
+          "distanceM": 397.4,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t000021d0000000017:213",
+          "name": "延命院のシイ",
+          "distanceM": 452.5,
+          "coordSource": "source",
+          "datasetId": "t000021d0000000017",
+          "organization": "東京都教育庁"
+        },
+        {
+          "id": "t131181d0000000010:254",
+          "name": "日暮里延命院貝塚",
+          "distanceM": 473.1,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:142",
+          "name": "経王寺法華経御鬮関連資料",
+          "distanceM": 492.9,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        }
+      ],
+      "datasets": [
+        "t000021d0000000017",
+        "t131059d0304010001",
+        "t131067d0000000393",
+        "t131181d0000000010"
+      ]
+    },
+    {
+      "stationId": "nippori",
+      "status": "complete",
+      "count": 13,
+      "lowerBound": 13,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 7
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 1
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131181d0000000010:11",
+          "name": "本行寺山門 付門番所及び築地塀",
+          "distanceM": 147.4,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131067d0000000393:115",
+          "name": "天王寺棟札",
+          "distanceM": 163.1,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000393",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131181d0000000010:142",
+          "name": "経王寺法華経御鬮関連資料",
+          "distanceM": 213.5,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t000021d2000000005:9",
+          "name": "＊?朝倉彫塑館",
+          "distanceM": 225.5,
+          "coordSource": "source",
+          "datasetId": "t000021d2000000005",
+          "organization": "東京都教育庁"
+        },
+        {
+          "id": "t131181d0000000010:46",
+          "name": "善性寺文書",
+          "distanceM": 265.6,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:201",
+          "name": "庚申塔（延宝八年十一月五日銘）",
+          "distanceM": 293.9,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t000021d0000000017:213",
+          "name": "延命院のシイ",
+          "distanceM": 307.3,
+          "coordSource": "source",
+          "datasetId": "t000021d0000000017",
+          "organization": "東京都教育庁"
+        },
+        {
+          "id": "t131181d0000000010:1",
+          "name": "養福寺仁王門",
+          "distanceM": 311.3,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:254",
+          "name": "日暮里延命院貝塚",
+          "distanceM": 379.0,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:184",
+          "name": "庚申塔群七基（寛文十年八月十五日銘他）",
+          "distanceM": 422.2,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131181d0000000010:234",
+          "name": "松林伯円の墓(初代・二代)",
+          "distanceM": 461.1,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        },
+        {
+          "id": "t131067d0000000393:12",
+          "name": "木造観音菩薩坐像",
+          "distanceM": 464.0,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000393",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131181d0000000010:106",
+          "name": "手水鉢（天保二年三月吉日銘）",
+          "distanceM": 498.2,
+          "coordSource": "source",
+          "datasetId": "t131181d0000000010",
+          "organization": "荒川区"
+        }
+      ],
+      "datasets": [
+        "t000021d0000000017",
+        "t000021d2000000005",
+        "t131067d0000000393",
+        "t131181d0000000010"
+      ]
+    },
+    {
+      "stationId": "uguisudani",
+      "status": "complete",
+      "count": 6,
+      "lowerBound": 6,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 7
+        },
+        {
+          "code": "13118",
+          "name": "荒川区",
+          "coverage": "covered",
+          "unlocated": 1
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t000021d0000000017:162",
+          "name": "慈海僧正墓",
+          "distanceM": 346.1,
+          "coordSource": "source",
+          "datasetId": "t000021d0000000017",
+          "organization": "東京都教育庁"
+        },
+        {
+          "id": "t000021d0000000017:242",
+          "name": "子規庵",
+          "distanceM": 364.9,
+          "coordSource": "source",
+          "datasetId": "t000021d0000000017",
+          "organization": "東京都教育庁"
+        },
+        {
+          "id": "t131067d0000000393:103",
+          "name": "木造大黒天立像",
+          "distanceM": 372.7,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000393",
+          "organization": "台東区"
+        },
+        {
+          "id": "t000021d2000000005:11",
+          "name": "＊?書道博物館",
+          "distanceM": 392.0,
+          "coordSource": "source",
+          "datasetId": "t000021d2000000005",
+          "organization": "東京都教育庁"
+        },
+        {
+          "id": "t131067d0000000393:81",
+          "name": "絹本著色朝顔･蜻蛉図　喜多川歌麿ほか筆",
+          "distanceM": 468.0,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000393",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000393:113",
+          "name": "紙本著色金亀図　酒井抱一筆",
+          "distanceM": 494.6,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000393",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t000021d0000000017",
+        "t000021d2000000005",
+        "t131067d0000000393",
+        "t131181d0000000010"
+      ]
+    },
+    {
+      "stationId": "ueno",
+      "status": "complete",
+      "count": 3,
+      "lowerBound": 3,
+      "municipalities": [
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 7
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t000021d0000000017:166",
+          "name": "天海僧正毛髪塔",
+          "distanceM": 258.5,
+          "coordSource": "source",
+          "datasetId": "t000021d0000000017",
+          "organization": "東京都教育庁"
+        },
+        {
+          "id": "t131067d0000000393:20",
+          "name": "彰義隊墓碑",
+          "distanceM": 287.6,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000393",
+          "organization": "台東区"
+        },
+        {
+          "id": "t131067d0000000393:82",
+          "name": "板絵著色雲竜図(天井画）　横山大観筆",
+          "distanceM": 463.7,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000393",
+          "organization": "台東区"
+        }
+      ],
+      "datasets": [
+        "t000021d0000000017",
+        "t131067d0000000393"
+      ]
+    },
+    {
+      "stationId": "okachimachi",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 7
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131067d0000000393:190",
+          "name": "関東大震災復興区画整理完成記念碑",
+          "distanceM": 305.1,
+          "coordSource": "source",
+          "datasetId": "t131067d0000000393",
+          "organization": "台東区"
+        },
+        {
+          "id": "t000021d2000000005:10",
+          "name": "＊?下町風俗資料館",
+          "distanceM": 463.8,
+          "coordSource": "source",
+          "datasetId": "t000021d2000000005",
+          "organization": "東京都教育庁"
+        }
+      ],
+      "datasets": [
+        "t000021d2000000005",
+        "t131016d0000000002",
+        "t131059d0304010001",
+        "t131067d0000000393"
+      ]
+    },
+    {
+      "stationId": "akihabara",
+      "status": "complete",
+      "count": 1,
+      "lowerBound": 1,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13105",
+          "name": "文京区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13106",
+          "name": "台東区",
+          "coverage": "covered",
+          "unlocated": 7
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131016d0000000002:12",
+          "name": "紙本着色 太田姫稲荷神社縁起絵巻",
+          "distanceM": 221.0,
+          "coordSource": "source",
+          "datasetId": "t131016d0000000002",
+          "organization": "千代田区"
+        }
+      ],
+      "datasets": [
+        "t131016d0000000002",
+        "t131059d0304010001",
+        "t131067d0000000393"
+      ]
+    },
+    {
+      "stationId": "kanda",
+      "status": "complete",
+      "count": 2,
+      "lowerBound": 2,
+      "municipalities": [
+        {
+          "code": "13101",
+          "name": "千代田区",
+          "coverage": "covered",
+          "unlocated": 0
+        },
+        {
+          "code": "13102",
+          "name": "中央区",
+          "coverage": "covered",
+          "unlocated": 0
+        }
+      ],
+      "facilities": [
+        {
+          "id": "t131024d0000000024:43",
+          "name": "佐々木家文書",
+          "distanceM": 340.8,
+          "coordSource": "source",
+          "datasetId": "t131024d0000000024",
+          "organization": "中央区"
+        },
+        {
+          "id": "t131024d0000000024:109",
+          "name": "長崎屋跡",
+          "distanceM": 375.0,
+          "coordSource": "source",
+          "datasetId": "t131024d0000000024",
+          "organization": "中央区"
+        }
+      ],
+      "datasets": [
+        "t131016d0000000002",
+        "t131024d0000000024"
+      ]
+    }
+  ]
+}

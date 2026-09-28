@@ -1,0 +1,26 @@
+# tools
+/.tools/
+
+# node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# python
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# data (generated / downloaded). processed + fixtures are committed for reproducibility.
+data/raw/*
+data/interim/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+
+# env
+.env
+.env.local
+.DS_Store

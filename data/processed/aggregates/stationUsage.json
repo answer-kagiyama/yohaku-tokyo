@@ -1,0 +1,705 @@
+{
+  "feature": "stationUsage",
+  "kind": "ridership",
+  "measure": "1日平均乗車人員（全社・全線の合算）",
+  "fiscalYear": 2024,
+  "daysInFiscalYear": 365,
+  "generatedAt": "2026-09-28T02:05:46Z",
+  "stations": [
+    {
+      "stationId": "tokyo",
+      "status": "complete",
+      "count": 531526,
+      "lowerBound": 531526,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東海道本線",
+          "annualThousands": 158616
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "丸ノ内線",
+          "annualThousands": 35391
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "yurakucho",
+      "status": "complete",
+      "count": 195921,
+      "lowerBound": 195921,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東海道本線",
+          "annualThousands": 46308
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "有楽町線",
+          "annualThousands": 25203
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "shimbashi",
+      "status": "complete",
+      "count": 408148,
+      "lowerBound": 408148,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東海道本線",
+          "annualThousands": 84544
+        },
+        {
+          "operator": "ゆりかもめ",
+          "line": "東京臨海新交通臨海線",
+          "annualThousands": 10535
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "銀座線",
+          "annualThousands": 37660
+        },
+        {
+          "operator": "都営",
+          "line": "浅草線",
+          "annualThousands": 16235
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "hamamatsucho",
+      "status": "complete",
+      "count": 133901,
+      "lowerBound": 133901,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東海道本線",
+          "annualThousands": 48874
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "tamachi",
+      "status": "complete",
+      "count": 125855,
+      "lowerBound": 125855,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東海道本線",
+          "annualThousands": 45937
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "takanawa-gateway",
+      "status": "complete",
+      "count": 14208,
+      "lowerBound": 14208,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東海道本線",
+          "annualThousands": 5186
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "shinagawa",
+      "status": "complete",
+      "count": 408342,
+      "lowerBound": 408342,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東海道本線",
+          "annualThousands": 105098
+        },
+        {
+          "operator": "京浜急行電鉄",
+          "line": "本線",
+          "annualThousands": 43947
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "osaki",
+      "status": "complete",
+      "count": 203504,
+      "lowerBound": 203504,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 52996
+        },
+        {
+          "operator": "東京臨海高速鉄道",
+          "line": "りんかい線",
+          "annualThousands": 21283
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "gotanda",
+      "status": "complete",
+      "count": 187748,
+      "lowerBound": 187748,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 40267
+        },
+        {
+          "operator": "東急電鉄",
+          "line": "池上線",
+          "annualThousands": 17512
+        },
+        {
+          "operator": "都営",
+          "line": "浅草線",
+          "annualThousands": 10749
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "meguro",
+      "status": "complete",
+      "count": 336110,
+      "lowerBound": 336110,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 34085
+        },
+        {
+          "operator": "東急電鉄",
+          "line": "目黒線",
+          "annualThousands": 48929
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "南北線",
+          "annualThousands": 19434
+        },
+        {
+          "operator": "都営",
+          "line": "三田線",
+          "annualThousands": 20232
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "ebisu",
+      "status": "complete",
+      "count": 177753,
+      "lowerBound": 177753,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 45994
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "日比谷線",
+          "annualThousands": 18886
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "shibuya",
+      "status": "complete",
+      "count": 1444005,
+      "lowerBound": 1444005,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 118411
+        },
+        {
+          "operator": "東急電鉄",
+          "line": "東横線",
+          "annualThousands": 76063
+        },
+        {
+          "operator": "東急電鉄",
+          "line": "田園都市線",
+          "annualThousands": 109868
+        },
+        {
+          "operator": "京王電鉄",
+          "line": "井の頭線",
+          "annualThousands": 52527
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "銀座線",
+          "annualThousands": 35312
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "半蔵門線",
+          "annualThousands": 84647
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "副都心線",
+          "annualThousands": 50234
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "harajuku",
+      "status": "complete",
+      "count": 67408,
+      "lowerBound": 67408,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 24604
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "yoyogi",
+      "status": "complete",
+      "count": 72915,
+      "lowerBound": 72915,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "中央本線",
+          "annualThousands": 20652
+        },
+        {
+          "operator": "都営",
+          "line": "大江戸線",
+          "annualThousands": 5962
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "shinjuku",
+      "status": "complete",
+      "count": 1538356,
+      "lowerBound": 1538356,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 243385
+        },
+        {
+          "operator": "小田急電鉄",
+          "line": "小田原線",
+          "annualThousands": 83697
+        },
+        {
+          "operator": "京王電鉄",
+          "line": "京王線",
+          "annualThousands": 122149
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "丸ノ内線",
+          "annualThousands": 36194
+        },
+        {
+          "operator": "都営",
+          "line": "新宿線",
+          "annualThousands": 53275
+        },
+        {
+          "operator": "都営",
+          "line": "大江戸線",
+          "annualThousands": 22800
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "shin-okubo",
+      "status": "complete",
+      "count": 49247,
+      "lowerBound": 49247,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 17975
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "takadanobaba",
+      "status": "complete",
+      "count": 401532,
+      "lowerBound": 401532,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 65578
+        },
+        {
+          "operator": "西武鉄道",
+          "line": "新宿線",
+          "annualThousands": 48246
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "東西線",
+          "annualThousands": 32735
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "mejiro",
+      "status": "complete",
+      "count": 33540,
+      "lowerBound": 33540,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 12242
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "ikebukuro",
+      "status": "complete",
+      "count": 1180858,
+      "lowerBound": 1180858,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 182182
+        },
+        {
+          "operator": "西武鉄道",
+          "line": "池袋線",
+          "annualThousands": 79156
+        },
+        {
+          "operator": "東武鉄道",
+          "line": "東上線",
+          "annualThousands": 76946
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "丸ノ内線",
+          "annualThousands": 46119
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "有楽町線",
+          "annualThousands": 28029
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "副都心線",
+          "annualThousands": 18581
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "otsuka",
+      "status": "complete",
+      "count": 54351,
+      "lowerBound": 54351,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 19838
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "sugamo",
+      "status": "complete",
+      "count": 110890,
+      "lowerBound": 110890,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 24513
+        },
+        {
+          "operator": "都営",
+          "line": "三田線",
+          "annualThousands": 15962
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "komagome",
+      "status": "complete",
+      "count": 62274,
+      "lowerBound": 62274,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "山手線",
+          "annualThousands": 15892
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "南北線",
+          "annualThousands": 6838
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "tabata",
+      "status": "complete",
+      "count": 40479,
+      "lowerBound": 40479,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東北本線",
+          "annualThousands": 14775
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "nishi-nippori",
+      "status": "complete",
+      "count": 181997,
+      "lowerBound": 181997,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東北本線",
+          "annualThousands": 32706
+        },
+        {
+          "operator": "JR東日本",
+          "line": "日暮里・舎人ライナー",
+          "annualThousands": 5918
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "千代田線",
+          "annualThousands": 27805
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "nippori",
+      "status": "complete",
+      "count": 182773,
+      "lowerBound": 182773,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東北本線",
+          "annualThousands": 39083
+        },
+        {
+          "operator": "JR東日本",
+          "line": "日暮里・舎人ライナー",
+          "annualThousands": 10151
+        },
+        {
+          "operator": "京成電鉄",
+          "line": "本線",
+          "annualThousands": 17478
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "uguisudani",
+      "status": "complete",
+      "count": 24460,
+      "lowerBound": 24460,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東北本線",
+          "annualThousands": 8928
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "ueno",
+      "status": "complete",
+      "count": 263129,
+      "lowerBound": 263129,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東北本線",
+          "annualThousands": 62065
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "銀座線",
+          "annualThousands": 19101
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "日比谷線",
+          "annualThousands": 14876
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "okachimachi",
+      "status": "complete",
+      "count": 62984,
+      "lowerBound": 62984,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東北本線",
+          "annualThousands": 22989
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "akihabara",
+      "status": "complete",
+      "count": 338658,
+      "lowerBound": 338658,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "東北本線",
+          "annualThousands": 80819
+        },
+        {
+          "operator": "首都圏新都市鉄道",
+          "line": "つくばエクスプレス",
+          "annualThousands": 22653
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "日比谷線",
+          "annualThousands": 20138
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    },
+    {
+      "stationId": "kanda",
+      "status": "complete",
+      "count": 119055,
+      "lowerBound": 119055,
+      "lines": [
+        {
+          "operator": "JR東日本",
+          "line": "中央本線",
+          "annualThousands": 33043
+        },
+        {
+          "operator": "東京地下鉄株式会社",
+          "line": "銀座線",
+          "annualThousands": 10412
+        }
+      ],
+      "datasets": [
+        "t000003d2000001150"
+      ]
+    }
+  ]
+}

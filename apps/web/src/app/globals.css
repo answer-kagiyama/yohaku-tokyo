@@ -1,0 +1,169 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "../styles/tokens.css";
+
+/* MVP is light-only (paper metaphor). Kept for shadcn compatibility. */
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* --- YOHAKU tokens exposed to Tailwind --- */
+  --color-paper: var(--yk-paper);
+  --color-paper-sunken: var(--yk-paper-sunken);
+  --color-paper-raised: var(--yk-paper-raised);
+  --color-ink: var(--yk-ink);
+  --color-ink-muted: var(--yk-ink-muted);
+  --color-ink-faint: var(--yk-ink-faint);
+  --color-rule: var(--yk-rule);
+  --color-rule-input: var(--yk-rule-input);
+  --color-rule-strong: var(--yk-rule-strong);
+  --color-vermilion: var(--yk-vermilion);
+  --color-vermilion-soft: var(--yk-vermilion-soft);
+  --color-data: var(--yk-data);
+  --color-data-track: var(--yk-data-track);
+
+  --font-sans: var(--font-noto-sans-jp), var(--font-plex-sans), "Hiragino Sans", sans-serif;
+  --font-display: var(--font-shippori), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-numeric: var(--font-plex-sans), var(--font-noto-sans-jp), sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --font-heading: var(--font-display);
+
+  --text-score: 4.5rem;
+  --text-score--line-height: 1;
+  --text-display: 2.75rem;
+  --text-display--line-height: 1.1;
+  --text-title: 1.75rem;
+  --text-title--line-height: 1.3;
+  --text-heading: 1.125rem;
+  --text-heading--line-height: 1.5;
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.8;
+  --text-label: 0.8125rem;
+  --text-label--line-height: 1.5;
+  --text-caption: 0.6875rem;
+  --text-caption--line-height: 1.4;
+  --text-caption--letter-spacing: 0.12em;
+
+  --shadow-pop: var(--yk-shadow-pop);
+
+  /* Radius: nearly square. Everything above lg is capped at lg. */
+  --radius-xs: var(--yk-radius-sm);
+  --radius-sm: var(--yk-radius-sm);
+  --radius-md: var(--yk-radius-md);
+  --radius-lg: var(--yk-radius-lg);
+  --radius-xl: var(--yk-radius-lg);
+  --radius-2xl: var(--yk-radius-lg);
+  --radius-3xl: var(--yk-radius-lg);
+  --radius-4xl: var(--yk-radius-lg);
+
+  /* --- shadcn semantic tokens (aliases onto YOHAKU tokens) --- */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: var(--yk-radius-md);
+  --background: var(--yk-paper);
+  --foreground: var(--yk-ink);
+  --card: var(--yk-paper-raised);
+  --card-foreground: var(--yk-ink);
+  --popover: var(--yk-paper-raised);
+  --popover-foreground: var(--yk-ink);
+  --primary: var(--yk-ink);
+  --primary-foreground: var(--yk-paper);
+  --secondary: var(--yk-paper-sunken);
+  --secondary-foreground: var(--yk-ink);
+  --muted: var(--yk-paper-sunken);
+  --muted-foreground: var(--yk-ink-muted);
+  /* shadcn "accent" = subtle hover surface, NOT the brand accent (vermilion). */
+  --accent: var(--yk-paper-sunken);
+  --accent-foreground: var(--yk-ink);
+  --destructive: var(--yk-vermilion);
+  --border: var(--yk-rule);
+  --input: var(--yk-rule-input);
+  --ring: var(--yk-vermilion);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply font-sans;
+    font-feature-settings: "palt" 1;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground text-body antialiased;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--yk-vermilion);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: var(--yk-vermilion-soft);
+    color: var(--yk-ink);
+  }
+}
+
+@layer utilities {
+  .tnum {
+    font-family: var(--font-numeric);
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+  .caption {
+    font-family: var(--font-numeric);
+    font-size: var(--text-caption);
+    line-height: var(--text-caption--line-height);
+    letter-spacing: var(--text-caption--letter-spacing);
+    text-transform: uppercase;
+  }
+  .page-container {
+    width: 100%;
+    max-width: var(--yk-page);
+    margin-inline: auto;
+    padding-inline: var(--yk-gutter);
+  }
+  .bg-missing {
+    background: var(--yk-missing);
+  }
+  /* Faint field-note ruled paper, used sparingly (Home masthead). */
+  .ruled-paper {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0 31px,
+      color-mix(in srgb, var(--yk-rule) 55%, transparent) 31px 32px
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
