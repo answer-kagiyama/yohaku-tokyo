@@ -5,7 +5,9 @@
 東京都・区市町村のオープンデータを横断し、駅周辺 500m に“目的地となりうる施設・機能”が
 どれだけあるかを数値化する MVP です。詳細は [docs/product.md](docs/product.md)。
 
-**現在のステータス: Step 10**（山手線 30 駅 × 6 特徴量、うち 20 駅を判定。駅マスタは国土数値情報 N02。スコア v0.2.0: 実効重み・順位・重みへの感度。`/data` に採用データセットの台帳）。
+**現在のステータス・次のタスク・未決の論点は [docs/status.md](docs/status.md)**。
+
+**Step 10 完了**（山手線 30 駅 × 6 特徴量、うち 20 駅を判定。駅マスタは国土数値情報 N02。スコア v0.2.0: 実効重み・順位・重みへの感度。`/data` に採用データセットの台帳）。
 区のオープンデータが揃わない 10 駅は「判定不能」として不足データを表示（spec 0008）。重みは据え置きで再配分（ADR 0009）。
 
 ## 必要なもの
@@ -54,7 +56,7 @@ data/                 fixtures / manifests / raw / interim / processed
 ## Dataset discovery
 
 ```bash
-make discover                 # enabled な feature（現在は park）を探索。初回 ~30 秒、以降はキャッシュ
+make discover                 # enabled な feature（公園・文化・公共施設・観光・図書館）を探索。初回数分、以降はキャッシュ
 cd pipeline && uv run station-pipeline discover --feature park --refresh   # キャッシュを無視
 ```
 
@@ -84,10 +86,10 @@ cd pipeline && uv run station-pipeline stations        # make data の最初
 cd pipeline && uv run station-pipeline ingest            # make data の前半
 ```
 
-- 生データ: `data/raw/park/<datasetId>.csv` + `.meta.json`（URL・取得日時・sha256）
-- 正規化結果: `data/interim/park/facilities.json`（施設ごとの座標・出典・`coordSource`・`unlocatedReason`）
-- 品質レポート: `data/interim/park/report.json`
-- ジオコーディング対象の区は `pipeline/config/pipeline.yaml` の `geocode.scope`
+- 生データ: `data/raw/<feature>/<datasetId>.<ext>` + `.meta.json`（URL・取得日時・sha256）
+- 正規化結果: `data/interim/<feature>/facilities.json`（施設ごとの座標・出典・`coordSource`・`unlocatedReason`）
+- 品質レポート: `data/interim/<feature>/report.json`
+- ジオコーディング対象の区は `pipeline/config/pipeline.yaml` の `geocode.scope`（`auto` = 駅マスタの 500m 圏の区）
 
 ## Spatial aggregate（Step 6）
 
@@ -98,16 +100,21 @@ cd pipeline && uv run station-pipeline ridership      # 駅利用: 東京都統�
 
 - 駅と施設を EPSG:6677（平面直角座標系 IX 系, m）に投影し、GeoPandas の `dwithin 500m` で判定
 - 圏内に掛かる区市町村を国土地理院 逆ジオコーダで特定し、その区市町村のデータが揃っていなければ件数は **null（欠損）**
-- 結果: `data/processed/aggregates/park.json`。Web の駅詳細「根拠」に施設名・距離・座標の出所を表示
+- 結果: `data/processed/aggregates/<feature>.json`。Web の駅詳細「根拠」に施設名・距離・座標の出所を表示
 
 ## Data flow
 
 ```text
-data/fixtures/stations.raw.json  ─ station-pipeline build-fixture ─▶  data/processed/stations.json
-                                  (percentile rank → low → weighted YOHAKU SCORE → quality gate)
-data/processed/stations.json     ─ station-pipeline export-web ────▶  apps/web/src/data/stations.json
-                                                                      (build 時に zod で検証)
+stations  : config の駅名 + N02 + 統計年鑑          ─▶ data/processed/stations.master.json
+discover  : CKAN 探索 → 評価 → overrides            ─▶ data/manifests/datasets.json
+ingest    : 取得 → 正規化 → 分類 → ジオコーディング   ─▶ data/interim/<feature>/facilities.json
+aggregate : 500m 空間集計 + 区の網羅性判定          ─▶ data/processed/aggregates/<feature>.json
+ridership : 統計年鑑の駅別乗車人員                  ─▶ data/processed/aggregates/stationUsage.json
+build     : percentile → low → YOHAKU SCORE → 品質検査 ─▶ data/processed/stations.json
+export-web: Web へコピー + データ台帳               ─▶ apps/web/src/data/{stations,provenance}.json（build 時に zod で検証）
 ```
+
+（`build-fixture` は駅マスタがあればそれを、無ければ 5 駅のテスト用 fixture を使う）
 
 スコアの定義は [docs/scoring.md](docs/scoring.md)。AI は最終スコアに関与しません（[ADR 0004](docs/adr/0004-no-ai-final-score.md)）。
 

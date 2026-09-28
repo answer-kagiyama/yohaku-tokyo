@@ -5,10 +5,10 @@
 ```text
 東京都OD カタログ (CKAN + DataStore)   ✅ Step 4
         ↓ discover (search → inspect → evaluate → overrides)
-data/manifests/datasets.json            ✅ Step 4 (park)
-        ↓ ingest: fetch → parse → normalize → geocode (GSI) → dedupe   ✅ Step 5 (park)
+data/manifests/datasets.json            ✅ Step 4, 7
+        ↓ ingest: fetch → parse (CSV/GeoJSON) → normalize → classify (rule) → geocode (GSI) → dedupe   ✅ Step 5, 7, 10
 data/raw/<feature>/ + data/interim/<feature>/facilities.json, report.json
-        ↓ aggregate: EPSG:6677 + sjoin dwithin 500m、圏内区市町村の網羅性判定   ✅ Step 6 (park)
+        ↓ aggregate: EPSG:6677 + sjoin dwithin 500m、圏内区市町村の網羅性判定   ✅ Step 6
 data/processed/aggregates/<feature>.json
         ↓
 data/processed/stations.master.json   (駅マスタ: config の駅名 + N02 座標・路線 + 年鑑の英語名, spec 0008)
@@ -21,8 +21,8 @@ apps/web/src/data/stations.json + provenance.json（採用データセットの�
 Next.js (静的生成: Home / Explorer / Detail / Methodology / Data)
 ```
 
-現段階では「raw 集計値」を fixture で差し替え、**スコアリング以降は本番と同じコード経路**を通す。
-Step 5〜7 で fixture の代わりに実データ集計結果が入る。
+6 特徴量すべて実データ（spec 0005）。駅利用は施設リストではなく統計年鑑の駅別表から取る（`ridership`）。
+5 駅の fixture は pipeline のテスト用に残している。
 
 ## 2. Components
 
@@ -34,12 +34,12 @@ Step 5〜7 で fixture の代わりに実データ集計結果が入る。
 | `station_pipeline.scoring` | percentile rank / low score / YOHAKU SCORE | ✅ |
 | `station_pipeline.quality` | Data Quality 検査（ID 重複・座標・0〜100 範囲・出典） | ✅ |
 | `station_pipeline.export` | processed JSON 書き出し・Web へのコピー | ✅ |
-| `station_pipeline.cli` | `build-fixture` / `export-web` | ✅ |
+| `station_pipeline.cli` | `stations` / `discover` / `ingest` / `aggregate` / `ridership` / `build-fixture` / `export-web` | ✅ |
 | `station_pipeline.http` | キャッシュ・リトライ付き JSON クライアント（urllib）| ✅ |
 | `station_pipeline.discover` | feature 定義読込・CKAN 探索・RuleBased 評価・manifest | ✅ |
 | `station_pipeline.inspect` | 列名推定（緯度/経度/名称/住所）・座標充足率 | ✅ |
 | `station_pipeline.fetch` | リソース取得 + 取得メタデータ（URL・日時・sha256）| ✅ |
-| `station_pipeline.inspect.tabular` | CSV 読込（UTF-8 BOM / CP932 判定）| ✅ |
+| `station_pipeline.inspect.tabular` | CSV（UTF-8 BOM / CP932 / UTF-16）・GeoJSON 読込 | ✅ |
 | `station_pipeline.normalize` | 行 → Facility、同一施設の統合 | ✅ |
 | `station_pipeline.geo.geocode` | GSI 住所検索（ADR 0007）。区市町村レベルの結果は不採用 | ✅ |
 | `station_pipeline.ingest` | Step 5 のオーケストレーション・report | ✅ |
